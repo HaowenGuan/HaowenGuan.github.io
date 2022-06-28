@@ -10,7 +10,9 @@
 
     <style>
         body {
-            background-image: url('image/stars small.jpeg');
+            background-image: url('image/rotate.jpg');
+            background-attachment: fixed;
+            background-size: cover;
         }
         .render-viewer {
             width:100%;
@@ -30,7 +32,7 @@
 
 <body>
     <header class="navbar navbar-expand-md navbar-dark bg-transparent">
-        <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+        <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
             <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
                 <svg xmlns="http://www.w3.org/2000/svg"
                      width="48pt" height="48pt" viewBox="0 0 450.000000 265.000000"
@@ -365,26 +367,6 @@
     <!--            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">-->
     <!--            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>-->
     <!--        </div>-->
-            <h2>Math in TeX notation</h2>
-            <p class = "bd-text">
-            When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-            $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-
-            $$ \begin{array}{rcll}
-            y & = & x^{2}+bx+c\\
-            & = & x^{2}+2\times\dfrac{b}{2}x+c\\
-            & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
-            {\left(\dfrac{b}{2}\right)^{2}+c}\\
-            &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
-            & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
-            & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
-            y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
-            \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
-            y-y_{S} & = & (x-x_{S})^{2}\\
-            S(x_{S};y_{S}) & \,\textrm{or}\,
-            & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
-            \end{array} $$
-            </p>
 
             <div class="bd-content ps-lg-4">
                 <iframe class="render-viewer" src="https://notebooks.githubusercontent.com/view/ipynb?azure_maps_enabled=false&browser=safari&color_mode=auto&commit=d2ee05dd03dc32e85559eda45b9140109bea9c7f&device=unknown_device&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f48616f77656e4775616e2f446174612d416e616c797369732d504859532d3433342f643265653035646430336463333265383535353965646134356239313430313039626561396337662f4857312f48656c6c6f576f726c642e6970796e62&enterprise_enabled=false&logged_in=true&nwo=HaowenGuan%2FData-Analysis-PHYS-434&path=HW1%2FHelloWorld.ipynb&platform=mac&repository_id=302469475&repository_type=Repository&version=15#8ba4ba4f-79f8-4539-9bdd-dc58c2f4160e" sandbox="allow-scripts allow-same-origin allow-top-navigation" title="File display" name="4f84a6af-5ed5-43d3-ac28-9b4cdb37fa48">

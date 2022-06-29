@@ -10,17 +10,24 @@
 
     <style>
         body {
-            background-image: url('image/rotate.jpg');
-            background-attachment: fixed;
-            background-size: cover;
+            background-image: url('image/stars-s-b.jpeg');
+            /*background-attachment: fixed;*/
+            /*background-size: cover;*/
         }
+
         .render-viewer {
             width:100%;
             height:100%
         }
 
         .bd-text {
-            color:rgba(255, 255, 255, 0.85)
+            color:rgba(255, 255, 255, 1);
+            background-color:rgba(0, 0, 0, 0.382);
+        }
+
+        .invert{
+            filter: invert(100%);
+            background-image: url('image/stars-s-w.jpeg');
         }
     </style>
 
@@ -28,9 +35,15 @@
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script type="text/javascript">
+        function newSrc(link) {
+            document.getElementById("MyFrame").src=link;
+        }
+    </script>
 </head>
 
-<body>
+<body id="bd">
     <header class="navbar navbar-expand-md navbar-dark bg-transparent">
         <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
             <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
@@ -61,6 +74,8 @@
                 <strong>Haowen Guan</strong>
             </a>
 
+
+
             <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-center">
                 <li class="nav-item col-6 col-md-auto">
                     <a class="nav-link p-2 active" href="docs.html" aria-current="page">Docs</a>
@@ -76,8 +91,24 @@
                 </li>
             </ul>
 
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-right">
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.add('invert')">light</button>
+                </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.remove('invert')">dark</button>
+                </li>
+            </ul>
+
+
             <div class="text-end">
                 <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                    <li class="nav-item ">
+
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+
+                    </li>
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2" href="https://github.com/HaowenGuan" target="_blank" rel="noopener">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -119,12 +150,36 @@
                         </a>
                     </li>
                 </ul>
+
             </div>
         </nav>
     </header>
 
+<!--    <p>Click on link bellow to change iframe content:</p>-->
+<!--    <a href="http://www.bing.com" target="search_iframe">Bing</a> - -->
+<!--    <a href="https://www.wikipedia.org" target="search_iframe">Wikipedia</a> - -->
+<!--    <a href="http://google.com" target="search_iframe">Google</a> (not allowed in inframe)-->
+
+<!--    &lt;!&ndash;            <div class="bd-content ps-lg-4">&ndash;&gt;-->
+<!--    <iframe name="search_iframe" class="render-viewer" id="FrameId" src="https://notebooks.githubusercontent.com/view/ipynb?azure_maps_enabled=false&browser=safari&color_mode=auto&commit=d2ee05dd03dc32e85559eda45b9140109bea9c7f&device=unknown_device&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f48616f77656e4775616e2f446174612d416e616c797369732d504859532d3433342f643265653035646430336463333265383535353965646134356239313430313039626561396337662f4857312f48656c6c6f576f726c642e6970796e62&enterprise_enabled=false&logged_in=true&nwo=HaowenGuan%2FData-Analysis-PHYS-434&path=HW1%2FHelloWorld.ipynb&platform=mac&repository_id=302469475&repository_type=Repository&version=15#8ba4ba4f-79f8-4539-9bdd-dc58c2f4160e" sandbox="allow-scripts allow-same-origin allow-top-navigation">-->
+<!--        Viewer requires iframe.-->
+<!--    </iframe>-->
+
     <div class="container-xxl my-md-4 bd-layout">
 
+
+
+<!--        <ul class="nav nav-pills" id="pillNav" role="tablist">-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>-->
+<!--            </li>-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>-->
+<!--            </li>-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>-->
+<!--            </li>-->
+<!--        </ul>-->
 
 
 
@@ -140,10 +195,10 @@
 
                     <div class="collapse show" id="getting-started-collapse" style="">
                         <ul class="list-unstyled fw-normal pb-1 small">
-                            <li><a href="/docs/5.1/getting-started/introduction/" class="d-inline-flex align-items-center rounded active" aria-current="page">Introduction</a></li>
-                            <li><a href="/docs/5.1/getting-started/download/" class="d-inline-flex align-items-center rounded">Download</a></li>
-                            <li><a href="/docs/5.1/getting-started/contents/" class="d-inline-flex align-items-center rounded">Contents</a></li>
-                            <li><a href="/docs/5.1/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
+                            <li><a target="show" href="https://www.wikipedia.org" class="d-inline-flex align-items-center rounded active" aria-current="page">Introduction</a></li>
+                            <li><a target="show" href="https://en.wikipedia.org/wiki/Main_Page" class="d-inline-flex align-items-center rounded">Download</a></li>
+                            <li><a target="show" href="https://nbviewer.org/github/HaowenGuan/Data-Analysis-PHYS-434/blob/main/HW1/HelloWorld.ipynb" class="d-inline-flex align-items-center rounded">Contents</a></li>
+                            <li><a target="show" href="/docs/5.1/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
                             <li><a href="/docs/5.1/getting-started/javascript/" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
                             <li><a href="/docs/5.1/getting-started/webpack/" class="d-inline-flex align-items-center rounded">Webpack</a></li>
                             <li><a href="/docs/5.1/getting-started/parcel/" class="d-inline-flex align-items-center rounded">Parcel</a></li>
@@ -344,18 +399,41 @@
 
 
 
-        <main class="bd-main order-1">
-            <ul class="nav nav-pills" id="pillNav" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
-                </li>
-            </ul>
+        <main class="bd-main">
+<!--            <ul class="nav nav-pills" id="pillNav" role="tablist">-->
+<!--                <li>-->
+<!--                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="true"-->
+<!--                            onclick="document.getElementById('FrameId').src='https://www.wikipedia.org'">Home</button>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"-->
+<!--                            onclick="document.getElementById('FrameId').src='https://en.wikipedia.org/wiki/Main_Page'">Profile</button>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="ChangeSource(3);">Contact</button>-->
+<!--                </li>-->
+<!--            </ul>-->
+
+            <div class="bd-toc"></div>
+<!--            <div class="bd-content ps-lg-4">-->
+            <iframe name="show" class="render-viewer" style="filter: invert(100%);" id="FrameId" src="https://nbviewer.jupyter.org/urls/github.com/HaowenGuan/Data-Analysis-PHYS-434/blob/main/HW1/HelloWorld.ipynb" sandbox="allow-scripts allow-same-origin allow-top-navigation">
+                Viewer requires iframe.
+            </iframe>
+<!--            </div>-->
+
+
+
+            <!--            <ul class="nav nav-pills">-->
+<!--                <li>-->
+<!--                    <button class="nav-link active" data-bs-toggle="tab" aria-selected="true">Home</button>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <button class="nav-link" data-bs-toggle="tab" aria-selected="false">Profile</button>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <button class="nav-link" data-bs-toggle="tab" aria-selected="false">Contact</button>-->
+<!--                </li>-->
+<!--            </ul>-->
 
     <!--        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">-->
     <!--            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>-->
@@ -368,11 +446,7 @@
     <!--            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>-->
     <!--        </div>-->
 
-            <div class="bd-content ps-lg-4">
-                <iframe class="render-viewer" src="https://notebooks.githubusercontent.com/view/ipynb?azure_maps_enabled=false&browser=safari&color_mode=auto&commit=d2ee05dd03dc32e85559eda45b9140109bea9c7f&device=unknown_device&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f48616f77656e4775616e2f446174612d416e616c797369732d504859532d3433342f643265653035646430336463333265383535353965646134356239313430313039626561396337662f4857312f48656c6c6f576f726c642e6970796e62&enterprise_enabled=false&logged_in=true&nwo=HaowenGuan%2FData-Analysis-PHYS-434&path=HW1%2FHelloWorld.ipynb&platform=mac&repository_id=302469475&repository_type=Repository&version=15#8ba4ba4f-79f8-4539-9bdd-dc58c2f4160e" sandbox="allow-scripts allow-same-origin allow-top-navigation" title="File display" name="4f84a6af-5ed5-43d3-ac28-9b4cdb37fa48">
-                    Viewer requires iframe.
-                </iframe>
-            </div>
+
         </main>
     </div>
 </body>

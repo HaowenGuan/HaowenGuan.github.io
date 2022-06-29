@@ -10,14 +10,19 @@
 
     <style>
         body {
-            background-image: url('image/rotate.jpg');
-            background-attachment: fixed;
-            background-size: cover;
+            background-image: url('image/stars-s-b.jpeg');
+            /*background-attachment: fixed;*/
+            /*background-size: cover;*/
         }
 
         .bd-text {
-            color: rgba(255, 255, 255, 1);
+            color:rgba(255, 255, 255, 1);
             background-color:rgba(0, 0, 0, 0.382);
+        }
+
+        .invert{
+            filter: invert(100%);
+            background-image: url('image/stars-s-w.jpeg');
         }
     </style>
 
@@ -27,7 +32,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body id="bd">
     <header class="navbar navbar-expand-md navbar-dark bg-transparent">
         <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
             <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
@@ -70,6 +75,15 @@
                 </li>
                 <li class="nav-item col-6 col-md-auto">
                     <a class="nav-link p-2" href="#" rel="noopener">Blog</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-right">
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.add('invert')">light</button>
+                </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.remove('invert')">dark</button>
                 </li>
             </ul>
 
@@ -126,22 +140,26 @@
             <div class="bd-intro bd-text">
                 <p><img class="" src="image/my photo.jpeg" alt="Me" style="width:200px;margin-right: .618rem;
                     margin-bottom: 1rem;float: left;"></p>
-                <div class="text-center" style="margin-bottom:2.2rem!important">
-                <p class="fs-3 fw-lighter">Welcome to My Homepage</p>
-                <p class="fs-5 fw-lighter fst-italic">This place is where all my crazy ideas and knowledge live</p>
+                <div class="text-center" style="margin-bottom:1.5rem!important">
+                <p class="fs-4 fw-lighter">Welcome to My Homepage</p>
+                <p class="fs-5 fw-lighter fst-italic">This place is where all my crazy ideas live</p>
                 </div>
 
                 <p> My name is Haowen Guan, mandarin written as 关皓文. I am from Shenzhen, China.</p>
                 <p> I graduated from University of Washington in 2021 and held a bachelor degree double major in
                     Applied Physics and Applied Mathematics: Data Science. At the same year, I started my graduate
-                    school at New York University major in Data Science. I am expecting to graduate by Jun, 2023.</p>
-                <p> I am a physics nerd. I love physics in a way that I took it as the shortest path to approach
-                    the truth of the world. During undergraduate study, I realized we are living in an era of
-                    information explosion, such that the data and computation resources is increasing exponentially
-                    every year. It reminded me the importance of a skill to master data and digital device, which
-                    led me to Data Science, as it is a field aiming to fuse big data and artificial intelligence.
-                    I love Data Science. I believe it is the greatest "hammer" of this era, and it is the key to
-                    push forward every academic field, including Physics.</p>
+                    school at New York University. Currently, I am working toward the degree of MS in Data Science,
+                    and I am expecting to graduate by Jun, 2023. My career plan is becoming a Data Scientist, a
+                    Machine Learning Engineer, and (probably) a Physicist in the future.</p>
+                <p> Outside of work, I am a science nerd, especially into Physics and Astronomy. I love physics in
+                    a way that I took it as the shortest path to approach the truth of the world. I also like coding,
+                    and I am fascinated by those intricate but elegant algorithms. During undergraduate study, I
+                    realized we are living in a world of exploding in information, such that the data and computation
+                    resources increased exponentially every year. This fact reminded me the importance of a skill to
+                    master the data and digital device in this era, which eventually led me to Data Science. I fall in
+                    love with Data Science, as it is a field exactly aiming to fuse these two big subjects, that using
+                    high performance computing machine to process big dataset and make predictions. I believe it is the
+                    greatest "hammer" of this era, and it is the key to push forward the world, including Physics.</p>
 
             </div>
             <div class="bd-toc"></div>

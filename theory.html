@@ -10,12 +10,19 @@
 
     <style>
         body {
-            background-image: url('image/rotate.jpg');
-            background-attachment: fixed;
-            background-size: cover;
+            background-image: url('image/stars-s-b.jpeg');
+            /*background-attachment: fixed;*/
+            /*background-size: cover;*/
         }
 
         .bd-text {
+            color:rgba(255, 255, 255, 1);
+            background-color:rgba(0, 0, 0, 0.382);
+        }
+
+        .invert{
+            filter: invert(100%);
+            background-image: url('image/stars-s-w.jpeg');
         }
     </style>
 
@@ -25,7 +32,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body id="bd">
     <header class="navbar navbar-expand-md navbar-dark bg-transparent">
         <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
             <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
@@ -68,6 +75,15 @@
                 </li>
                 <li class="nav-item col-6 col-md-auto">
                     <a class="nav-link p-2" href="#" target="_blank" rel="noopener">Blog</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-right">
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.add('invert')">light</button>
+                </li>
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.remove('invert')">dark</button>
                 </li>
             </ul>
 
@@ -118,8 +134,8 @@
         </nav>
     </header>
 
-    <div class="container-xxl my-md-4 bd-layout" style="background-color:rgba(0, 0, 0, 0.382);">
-
+    <div class="container-xxl my-md-4 bd-layout" >
+<!--        style="background-color:rgba(0, 0, 0, 0.382);"-->
 
         <aside class="bd-sidebar">
             <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">

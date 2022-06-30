@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Haowen Guan Homepage</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/docs.css" rel="stylesheet">
     <script src="/js/bootstrap.min.js"></script>
 
@@ -44,7 +44,7 @@
 </head>
 
 <body id="bd">
-    <header class="navbar navbar-expand-md navbar-dark bg-transparent">
+    <header class="navbar navbar-expand-md navbar-dark">
         <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
             <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -74,50 +74,37 @@
                 <strong>Haowen Guan</strong>
             </a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-center">
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2 active" href="docs.html" aria-current="page">Docs</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="theory.html">Theory</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="#">Temp</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="#" target="_blank" rel="noopener">Blog</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0 justify-content-right">
-                <li class="nav-item col-6 col-md-auto">
-                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.add('invert')">light</button>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <button class="btn btn-secondary bg-transparent" onclick="document.getElementById('bd').classList.remove('invert')">dark</button>
-                </li>
-            </ul>
-
-
-            <div class="text-end">
-                <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-                    <li class="nav-item ">
-
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <div class="d-flex flex-fill justify-content-center">
+                <ul class="navbar-nav pt-2 py-md-0">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2 active" href="docs.html" aria-current="page">Docs</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-
+                        <a class="nav-link p-2" href="theory.html">Theory</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="https://github.com/HaowenGuan" target="_blank" rel="noopener">
+                        <a class="nav-link p-2" href="#">Temp</a>
+                    </li>
+                </ul>
+                </div>
+
+
+            <div class="">
+                <ul class="navbar-nav">
+                    <li class="nav-item col-6 col-md-auto">
+                        <div class="nav-link p-2" href="https://github.com/HaowenGuan" target="_blank" rel="noopener">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  fill="currentColor" fill-rule="evenodd" width="32" height="32" viewBox="0 0 512 512">
                                 <title>GitHub</title>
                                 <path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/>
                             </svg>
                             <small class="d-md-none ms-2">GitHub</small>
-                        </a>
+                        </div>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2" href="https://www.tradingview.com/u/Little-Caesar/" target="_blank" rel="noopener">
@@ -150,10 +137,41 @@
                         </a>
                     </li>
                 </ul>
-
+            </div>
             </div>
         </nav>
     </header>
+
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center">
+            <form class="bd-search position-relative me-auto">
+                <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asian: normal; font-variant-position: normal; font-weight: normal; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+            </form>
+
+            <div class="ms-3">
+                <div class="form-check form-switch bg-transparent">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                           onchange="if(this.checked){document.getElementById('bd').classList.add('invert')}
+                       else{document.getElementById('bd').classList.remove('invert')}">
+                    <label class="form-check-label" style="color:rgba(255, 255, 255, 1);" for="flexSwitchCheckDefault">Dark / Light</label>
+                </div>
+            </div>
+
+
+            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+                    <title>Expand</title>
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+                    <title>Collapse</title>
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+                </svg>
+
+            </button>
+        </div>
+    </nav>
 
 <!--    <p>Click on link bellow to change iframe content:</p>-->
 <!--    <a href="http://www.bing.com" target="search_iframe">Bing</a> - -->
@@ -415,11 +433,11 @@
 <!--            </ul>-->
 
             <div class="bd-toc"></div>
-<!--            <div class="bd-content ps-lg-4">-->
+            <div class="bd-content d-flex">
             <iframe name="show" class="render-viewer" style="filter: invert(100%);" id="FrameId" src="https://nbviewer.jupyter.org/urls/github.com/HaowenGuan/Data-Analysis-PHYS-434/blob/main/HW1/HelloWorld.ipynb" sandbox="allow-scripts allow-same-origin allow-top-navigation">
                 Viewer requires iframe.
             </iframe>
-<!--            </div>-->
+            </div>
 
 
 

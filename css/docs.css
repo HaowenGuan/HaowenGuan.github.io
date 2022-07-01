@@ -608,7 +608,7 @@
     position: relative;
     z-index: 1020;
     background-color: rgba(255, 255, 255, 0);
-    box-shadow:0 0.5rem 1rem rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.15)
+    /*box-shadow:0 0.5rem 1rem rgba(255, 255, 255, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.15)*/
 }
 
 .bd-subnavbar .dropdown-menu {
@@ -879,7 +879,7 @@
 
 .bd-links {
     overflow: auto;
-    font-weight:600
+    font-weight:600;
 }
 
 @media (min-width: 768px) {
@@ -898,7 +898,7 @@
 @media (max-width: 767.98px) {
     .bd-links > ul {
         padding: 1.5rem .75rem;
-        background-color: #f8f9fa;
+        background-color: transparent;
         border-bottom:1px solid #e9ecef
     }
 }
@@ -916,24 +916,24 @@
     background-color:rgba(255, 255, 255, 0.1)
 }
 
-.bd-links .btn {
+.sidebar-branch {
     padding: .25rem .5rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
-    border:0
 }
 
-.bd-links .btn:hover, .bd-links .btn:focus {
+.sidebar-branch:hover, .sidebar-branch:focus {
     color: rgba(255, 255, 255, 0.8);
-    background-color:rgba(255, 255, 255, 0.1)
+    /*background-color:rgba(255, 255, 255, 0.1);*/
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
-.bd-links .btn:focus {
+.sidebar-branch:focus {
     box-shadow:0 0 0 1px rgba(255, 255, 255, 0.6)
 }
 
-.bd-links .btn::before {
+.sidebar-branch::before {
     width: 1.25em;
     line-height: 0;
     content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
@@ -942,16 +942,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .bd-links .btn::before {
+    .sidebar-branch::before {
         transition: none
     }
 }
 
-.bd-links .btn[aria-expanded="true"] {
-    color: rgba(255, 255, 255, 1)
+.sidebar-branch[aria-expanded="true"] {
+    color: rgba(255, 255, 255, 1);
+    /*background-color:rgba(255, 255, 255, 0.2);*/
 }
 
-.bd-links .btn[aria-expanded="true"]::before {
+.sidebar-branch[aria-expanded="true"]::before {
     transform:rotate(90deg)
 }
 
@@ -977,7 +978,7 @@
 
 .bd-sidebar {
     grid-area:sidebar
-}
+}bd-link
 
 .bd-main {
     grid-area:main

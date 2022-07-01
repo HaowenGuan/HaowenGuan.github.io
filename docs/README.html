@@ -1,0 +1,26 @@
+<html><head><style>body {
+    color: black;
+    background-color:rgba(255, 255, 255, 0.382);
+}
+</style></head><body><h1 id="welcome-to-docs-page">Welcome to Docs Page</h1>
+<p>This page serves as a file archive and provides fast access to all kinds of documents, such as http pages, jupyter notebooks, and pdf files, etc...</p>
+<p>Without leaving the page, you can navigate through all kinds of files.</p>
+<h2 id="implementation">Implementation</h2>
+<p>Page rendering is achieved by using <code>&lt;iframe&gt;</code> window in html. I implement an automatic iframe height adjuster using Javascript for full screen display as following,</p>
+<pre><code class="lang-Javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">resizeIframe</span><span class="hljs-params">(iframe)</span> </span>{
+    iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>This function is often restricted to used on external website, since the request to access other pages attributes due to <a href="https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame"><strong>Same-origin policy</strong></a>.</p>
+<h4 id="to-have-auto-window-size-works-properly-there-are-two-solutions-">To have auto-window-size works properly, there are two solutions:</h4>
+<ol>
+<li>Click the switch on the navigation bar above to enable <code>&lt;iframe&gt;</code> window scrolling.</li>
+<li>For the best performance, disable the same-origin policy in your browser:*<ol>
+<li><a href="https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome">Google Chrome</a></li>
+<li><a href="https://stackoverflow.com/questions/17088609/disable-firefox-same-origin-policy">Mozilla Firefox</a></li>
+<li><a href="https://stackoverflow.com/questions/4556429/disabling-same-origin-policy-in-safari">Apple Safari</a></li>
+</ol>
+</li>
+</ol>
+<p><strong>*Warning: Disabling the same-origin policy this is very unsafe and should NEVER being done if you do not know exactly what you are doing.</strong></p>
+</body></html>

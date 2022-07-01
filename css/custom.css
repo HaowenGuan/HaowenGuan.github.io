@@ -1,0 +1,61 @@
+.btn-radio-HG {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration:none;
+    font-size: 1em;
+    /*border-color: rgba(255, 255, 255, 0.1);*/
+}
+.btn-radio-HG:hover {
+    color: rgba(255, 255, 255, 0.8);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    border-color: rgba(255, 255, 255, 0.6);
+
+}
+/*Focus*/
+.btn-check:focus + .btn-radio-HG, .btn-radio-HG:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+}
+/*Checked or Active*/
+.btn-check:checked + .btn-radio-HG, .btn-check:active + .btn-radio-HG, .btn-radio-HG:active, .btn-radio-HG.active, .btn-radio-HG.dropdown-toggle.show {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    /*border-color: rgba(255, 255, 255, 0.1);*/
+    font-weight: 600;
+}
+/*(Checked or Active) and Focus*/
+.btn-check:checked + .btn-radio-HG:focus, .btn-check:active + .btn-radio-HG:focus, .btn-radio-HG:active:focus, .btn-radio-HG.active:focus, .btn-radio-HG.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+}
+.btn-radio-HG:disabled, .btn-radio-HG.disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+
+.btn-switch {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    text-decoration:none;
+    font-size: 1em;
+    /*border-color: rgba(255, 255, 255, 0.1);*/
+}
+.btn-switch:hover {
+    color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    border-color: rgba(255, 255, 255, 1);
+
+}
+.btn-check:checked + .btn-switch, .btn-check:active + .btn-switch, .btn-switch:active, .btn-switch.active, .btn-switch.dropdown-toggle.show {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.6);
+    /*border-color: rgba(255, 255, 255, 0.1);*/
+    font-weight: 600;
+}
+.btn-switch:disabled, .btn-switch.disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}

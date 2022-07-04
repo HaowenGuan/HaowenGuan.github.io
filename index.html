@@ -13,6 +13,10 @@
         body {
             background-image: url('image/stars-s-b.jpeg');
         }
+
+        .not-invert{
+            filter: invert(100%);
+        }
     </style>
 
     <meta name="theme-color" content="#030303">
@@ -126,7 +130,8 @@
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
              style="padding-right: 2.45rem !important;">
             <input type="radio" class="btn-check" name="theme" id="dark" autocomplete="off" checked
-                   onclick="document.getElementById('bd').classList.remove('invert')">
+                   onclick="document.getElementById('bd').classList.remove('invert');
+                            document.getElementById('MyPhoto').classList.remove('not-invert');">
             <label class="btn btn-switch" for="dark">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" fill="currentColor"
                      class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
@@ -136,7 +141,8 @@
             </label>
 
             <input type="radio" class="btn-check" name="theme" id="light" autocomplete="off"
-                   onclick="document.getElementById('bd').classList.add('invert')">
+                   onclick="document.getElementById('bd').classList.add('invert');
+                            document.getElementById('MyPhoto').classList.add('not-invert');">
             <label class="btn btn-switch" for="light">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" fill="currentColor"
                      class="bi bi-sun-fill" viewBox="0 0 16 16">
@@ -165,7 +171,7 @@
 
         <div class="bd-main">
             <div class="bd-intro bd-text">
-                <p><img class="" src="image/my photo.jpeg" alt="MyPhoto"
+                <p><img id="MyPhoto" src="image/my photo.jpeg" alt="MyPhoto"
                         style="width:200px;margin-right: .618rem; margin-bottom: 1rem;float: left;"></p>
                 <div class="text-center" style="margin-bottom:1.5rem!important">
                 <p class="fs-4 fw-lighter">Welcome to My Homepage</p>

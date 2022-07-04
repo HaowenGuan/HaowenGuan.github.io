@@ -1,0 +1,58 @@
+# Easy Q110
+------------------------------
+## Balanced Binary Tree
+Given a binary tree, determine if it is height-balanced.
+
+For this problem, a height-balanced binary tree is defined as: a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+
+Constraints:
+* The number of nodes in the tree is in the range [0, 5000].
+* $-104 <= Node.val <= 104$
+------------------------------
+### Notes:
+Edge cases:
+* If not node, return true
+
+
+### My first Answer:
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        deepth, balanced = self.helper(root, 1)
+        return balanced
+    
+    def helper(self, node, deepth):
+        if node is None:
+            return deepth, True
+        
+        l_d, l_b = self.helper(node.left, deepth + 1)
+        if not l_b:
+            return 0, False
+        r_d, r_b = self.helper(node.right, deepth + 1)
+        if not r_b:
+            return 0, False
+        
+        b = (abs(l_d - r_d) < 2)
+        
+        return max(l_d, r_d), b
+```
+### interpret
+1. The helper recursively goes downward, start from left, to check if every subtree is balanced.
+2. The left most leaf node first reached bottom, and returns it depth upward to parent node.
+3. Time complexity: in worst case, the tree is left skewed, the function helper will be called O(n) times.
+4. Space complexity: the recursion function will be called O(n).
+
+
+
+
+
+
+
+

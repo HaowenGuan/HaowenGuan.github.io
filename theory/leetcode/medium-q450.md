@@ -1,0 +1,199 @@
+# Medium Q450
+------------------------------
+## Delete Node in a BST
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+
+Basically, the deletion can be divided into two stages:
+
+Search for a node to remove.
+If the node is found, delete the node.
+
+
+
+Note: Time complexity should be O(height of tree).
+
+Example:
+```
+root = [5,3,6,2,4,null,7]
+key = 3
+
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+```
+
+Given key to delete is 3. So we find the node with value 3 and delete it.
+
+One valid answer is $[5,4,6,2,null,null,7]$, shown in the following BST.
+```
+
+    5
+   / \
+  4   6
+ /     \
+2       7
+```
+
+
+
+Another valid answer is $[5,2,6,null,4,null,7]$.
+```
+    5
+   / \
+  2   6
+   \   \
+    4   7
+```
+
+
+Constraints:
+
+* The number of nodes in the tree is in the range $[0, 10^4]$.
+* $-10^5 <= Node.val <= 10^5$
+* Each node has a unique value.
+* root is a valid binary search tree.
+* $-10^5 <= key <= 10^5$
+
+https://leetcode.com/problems/delete-node-in-a-bst/
+
+------------------------------
+### Notes
+Edge cases:
+
+* no node, return None
+* one node and matched, return None
+* one node not matched, return root
+
+##### Find predecessor
+Go left one time, and go right till end
+
+##### Find successor
+Go right one time, and go left till end
+
+### My First Answer:
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+        if root is None:
+            return None
+        
+        cur = root
+        prev = None
+        prev_dir = None
+        while cur is not None and cur.val != key:
+            prev = cur
+            if key < cur.val:
+                prev_dir = 0
+                cur = cur.left
+            else:
+                prev_dir = 1
+                cur = cur.right
+        if cur is None:
+            return root
+        
+        if cur.left is not None:
+            self.predecessor(cur)
+        elif cur.right is not None:
+            self.successor(cur)
+        else:
+            if prev is None:
+                return None
+            
+            if prev_dir:
+                prev.right = None
+            else:
+                prev.left = None
+        
+        if prev is None:
+            return cur
+        else:
+            return root
+        
+    
+    def predecessor(self, node: Optional[TreeNode]):
+        if node.left.right is not None:
+            cur = node.left
+            while cur.right.right is not None:
+                cur = cur.right
+            node.val = cur.right.val
+            cur.right = cur.right.left
+        else:
+            node.val = node.left.val
+            node.left = node.left.left
+    
+    
+    def successor(self, node: Optional[TreeNode]):
+        if node.right.left is not None:
+            cur = node.right
+            while cur.left.left is not None:
+                cur = cur.left
+            node.val = cur.left.val
+            cur.left = cur.left.right
+        else:
+            node.val = node.right.val
+            node.right = node.right.right
+```
+##### Interpret
+1. use while statement to find the target node
+2. use `prev` to keep track of the previous node, in case the current node is a leaf to be deleted
+3. Afterward, process different situations: not find, get predecessor, get successor, delete current.
+
+### Best Answer:
+```python
+class Solution:
+    def successor(self, root):
+        """
+        One step right and then always left
+        """
+        root = root.right
+        while root.left:
+            root = root.left
+        return root.val
+    
+    def predecessor(self, root):
+        """
+        One step left and then always right
+        """
+        root = root.left
+        while root.right:
+            root = root.right
+        return root.val
+        
+    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
+        if not root:
+            return None
+        
+        # delete from the right subtree
+        if key > root.val:
+            root.right = self.deleteNode(root.right, key)
+        # delete from the left subtree
+        elif key < root.val:
+            root.left = self.deleteNode(root.left, key)
+        # delete the current node
+        else:
+            # the node is a leaf
+            if not (root.left or root.right):
+                root = None
+            # the node is not a leaf and has a right child
+            elif root.right:
+                root.val = self.successor(root)
+                root.right = self.deleteNode(root.right, root.val)
+            # the node is not a leaf, has no right child, and has a left child    
+            else:
+                root.val = self.predecessor(root)
+                root.left = self.deleteNode(root.left, root.val)
+                        
+        return root
+```
+##### Interpret
+1. Recursively search for the target node, narrowing down the problem to the subtree with a root value of the target
+2. If node is a leaf, just delete it, else, find the predecessor or successor value, replace by it and then delete it by calling the function again.

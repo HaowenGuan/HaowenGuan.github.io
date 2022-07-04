@@ -10,21 +10,7 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <style>
-        body {
-            background-image: url('image/stars-s-b.jpeg');
-            /*background-attachment: fixed;*/
-            /*background-size: cover;*/
-        }
 
-        .bd-text {
-            color:rgba(255, 255, 255, 1);
-            background-color:rgba(0, 0, 0, 0.382);
-        }
-
-        .invert{
-            filter: invert(100%);
-            background-image: url('image/stars-s-w.jpeg');
-        }
     </style>
 
     <meta name="theme-color" content="#030303">
@@ -33,6 +19,7 @@
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script> window.MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}}; </script>
 </head>
 
 <body id="bd">
@@ -185,21 +172,21 @@
                             <ul class="list-unstyled fw-normal pb-1 small">
                                 <li>
                                     <input type="radio" class="btn-check" name="sidebar" id="1-1"
-                                           onclick="document.getElementById('FrameId').src='docs/README.html'" checked>
+                                           onclick="show('theory/README.md')" checked>
                                     <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-1">Introduction</label>
                                 </li>
                                 <li>
                                     <input type="radio" class="btn-check" name="sidebar" id="1-2"
-                                           onclick="document.getElementById('FrameId').src='https://www.wikipedia.org'">
+                                           onclick="show('docs/README.md')">
                                     <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Wikipedia</label>
                                 </li>
                                 <li>
                                     <input type="radio" class="btn-check" name="sidebar" id="1-3"
-                                           onclick="document.getElementById('FrameId').src='https://en.wikipedia.org/wiki/Main_Page'">
+                                           onclick="show('theory/README.md')">
                                     <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-3">Wikipedia Page</label>
                                 <li>
                                     <input type="radio" class="btn-check" name="sidebar" id="1-4"
-                                           onclick="document.getElementById('FrameId').src='https://nbviewer.org/github/HaowenGuan/Data-Analysis-PHYS-434/blob/main/HW1/HelloWorld.ipynb'">
+                                           onclick="show('theory/README.md')">
                                     <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-4">Jupyter</label>
                                 </li>
                                 <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
@@ -272,36 +259,73 @@
         </aside>
 
 
+        <main class="bd-main order-1">
+            <div class="bd-intro bd-text" >
+                <div id="preview" style="font-size: 1em;">
+                    <h1>
+                    <a id="user-content-welcome-to-theory-page" class="anchor" href="#welcome-to-theory-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Theory Page</h1>
+                    <p>This page is a navigator to all my blogs and study notes. It's capable to view Markdown file and Mathematical expressions directly in-place of the static html website.</p>
+                    <h2>
+                        <a id="user-content-implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
+                    <p>The implementation of rendering Markdown file is powered by <a href="https://docs.github.com/en/rest/markdown">GitHub Markdown API</a>.</p>
+                    <p>The implementation of displaying math expressions is power by <a href="https://www.mathjax.org" rel="nofollow">MathJax</a> library.</p>
+                    <h3>
+                        <a id="user-content-example-math-in-tex-and-latex-notation" class="anchor" href="#example-math-in-tex-and-latex-notation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: Math in TeX and LaTeX notation</h3>
+                    <p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+                    <p>$$ \begin{array}{rcll}
+                        y &amp; = &amp; x^{2}+bx+c\\
+                        &amp; = &amp; x^{2}+2\times\dfrac{b}{2}x+c\\
+                        &amp; = &amp; \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
+                        {\left(\dfrac{b}{2}\right)^{2}+c}\\
+                        &amp;  &amp; \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+                        &amp; = &amp; \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
+                        &amp; \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+                        y+\left(\dfrac{b}{2}\right)^{2}-c &amp; = &amp; \left(x+
+                        \dfrac{b}{2}\right)^{2} &amp; \left|\strut(\textrm{vertex form})\right.\\
+                        y-y_{S} &amp; = &amp; (x-x_{S})^{2}\\
+                        S(x_{S};y_{S}) &amp; ,\textrm{or},
+                        &amp; S\left(-\dfrac{b}{2};,\left(\dfrac{b}{2}\right)^{2}-c\right)
+                        \end{array} $$
+                    </p>
+                </div>
 
 
+                <script>
+                    const button = document.getElementById('wtf');
+                    const preview = document.getElementById('preview');
+                    async function show(path) {
+                        // Read from markdown file
+                        const rawFile = new XMLHttpRequest();
+                        rawFile.open("GET", path, false);
+                        rawFile.send(null);
 
-        <main class="bd-main order-1" style="color:rgba(255, 255, 255, 1);">
-            <div class="bd-intro bd-text">
-                <h2>Math in TeX notation</h2>
-                <p>
-                    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-                    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+                        // Using GitHub Markdown API, and display HTML
+                        const rendered = await render(rawFile.response);
+                        preview.innerHTML = rendered;
+                        MathJax.typeset()
+                    }
 
-                    $$ \begin{array}{rcll}
-                    y & = & x^{2}+bx+c\\
-                    & = & x^{2}+2\times\dfrac{b}{2}x+c\\
-                    & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
-                    {\left(\dfrac{b}{2}\right)^{2}+c}\\
-                    &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
-                    & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
-                    & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
-                    y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
-                    \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
-                    y-y_{S} & = & (x-x_{S})^{2}\\
-                    S(x_{S};y_{S}) & \,\textrm{or}\,
-                    & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
-                    \end{array} $$
-                </p>
+                    async function render(markdown) {
+                        return (await fetch('https://api.github.com/markdown', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({'mode': 'markdown', 'text': markdown})
+                        })).text();
+                    }
+                </script>
             </div>
+
             <div class="bd-toc"></div>
             <div class="bd-content"></div>
         </main>
     </div>
+
+
+
+
 
     <div class="container-xl" style="color:rgba(255,255,255,0.8);font-size:0.875em;">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-3 border-top">

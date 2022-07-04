@@ -1,7 +1,7 @@
 # Welcome to Docs Page
-This page serves as a file archive and provides fast access to all kinds of documents, such as http pages, jupyter notebooks, and pdf files, etc...
+This page serves as a file archive and provides fast access to them.
 
-Without leaving the page, you can navigate through all kinds of files.
+Without leaving the page, you can navigate through all kinds of files, such as http pages, jupyter notebooks, and pdf files, etc...
 
 ## Implementation
 Page rendering is achieved by using `<iframe>` window in html. I implement an automatic iframe height adjuster using Javascript for full screen display as following,
@@ -22,7 +22,6 @@ This function is often restricted to used on external website, since the request
    3. [Apple Safari](https://stackoverflow.com/questions/4556429/disabling-same-origin-policy-in-safari)
 
 ***Warning: Disabling the same-origin policy this is very unsafe and should NEVER being done if you do not know exactly what you are doing.**
-
 
 
 

@@ -1,9 +1,3 @@
-body {
-    background-image: url('../image/stars-s-b.jpeg');
-    /*background-attachment: fixed;*/
-    /*background-size: cover;*/
-}
-
 .bd-text {
     color:rgba(255, 255, 255, 1);
     background-color:rgba(0, 0, 0, 0.382);

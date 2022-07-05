@@ -180,16 +180,7 @@
                                 <li>
                                     <input type="radio" class="btn-check" name="sidebar" id="1-2"
                                            onclick="show('docs/README.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Wikipedia</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="1-3"
-                                           onclick="show('theory/README.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-3">Wikipedia Page</label>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="1-4"
-                                           onclick="show('theory/README.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-4">Jupyter</label>
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Docs-README</label>
                                 </li>
                                 <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
                                 <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
@@ -203,18 +194,42 @@
                     </li>
                     <li class="mb-1">
                         <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
-                            Customize
+                            Leetcode
                         </button>
 
                         <div class="collapse" id="customize-collapse">
                             <ul class="list-unstyled fw-normal pb-1 small">
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-0"
+                                           onclick="show('theory/leetcode/README.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-0">Introduction</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-108"
+                                           onclick="show('theory/leetcode/easy-q108.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-108">Q108</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-110"
+                                           onclick="show('theory/leetcode/easy-q110.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-110">Q110</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-111"
+                                           onclick="show('theory/leetcode/easy-q111.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-111">Q111</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-112"
+                                           onclick="show('theory/leetcode/easy-q112.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-112">Q112</label>
+                                </li>
+                                <li>
+                                    <input type="radio" class="btn-check" name="sidebar" id="2-450"
+                                           onclick="show('theory/leetcode/algorithm-medium-q450.md')">
+                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-450">Q450</label>
+                                </li>
+
                             </ul>
                         </div>
                     </li>
@@ -263,19 +278,20 @@
 
         <main class="bd-main order-1">
             <div class="bd-intro bd-text" >
-                <div id="preview" style="font-size: 1em;">
+                <div id="preview">
                     <h1>
-                    <a id="user-content-welcome-to-theory-page" class="anchor" href="#welcome-to-theory-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Theory Page</h1>
+                        <a id="user-content-welcome-to-theory-page" class="anchor" href="#welcome-to-theory-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Theory Page</h1>
                     <p>This page is a navigator to all my blogs and study notes. It's capable to view Markdown file and Mathematical expressions directly in-place of the static html website.</p>
                     <h2>
                         <a id="user-content-implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
-                    <p>The implementation of rendering Markdown file is powered by <a href="https://docs.github.com/en/rest/markdown">GitHub Markdown API</a>.</p>
+                    <p>This page renders Markdown file using <a href="https://docs.github.com/en/rest/markdown">GitHub Markdown API</a>. According to GitHub document, every unauthenticated clients is limited to 60 requests per hour.</p>
                     <p>The implementation of displaying math expressions is power by <a href="https://www.mathjax.org" rel="nofollow">MathJax</a> library.</p>
                     <h3>
                         <a id="user-content-example-math-in-tex-and-latex-notation" class="anchor" href="#example-math-in-tex-and-latex-notation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: Math in TeX and LaTeX notation</h3>
                     <p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
                         $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
-                    <p>$$ \begin{array}{rcll}
+                    <p>
+                        $$ \begin{array}{rcll}
                         y &amp; = &amp; x^{2}+bx+c\\
                         &amp; = &amp; x^{2}+2\times\dfrac{b}{2}x+c\\
                         &amp; = &amp; \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
@@ -286,41 +302,53 @@
                         y+\left(\dfrac{b}{2}\right)^{2}-c &amp; = &amp; \left(x+
                         \dfrac{b}{2}\right)^{2} &amp; \left|\strut(\textrm{vertex form})\right.\\
                         y-y_{S} &amp; = &amp; (x-x_{S})^{2}\\
-                        S(x_{S};y_{S}) &amp; ,\textrm{or},
-                        &amp; S\left(-\dfrac{b}{2};,\left(\dfrac{b}{2}\right)^{2}-c\right)
+                        S(x_{S};y_{S}) &amp; \,\textrm{or}\,
+                        &amp; S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
                         \end{array} $$
                     </p>
                 </div>
-
-
-                <script>
-                    const button = document.getElementById('wtf');
-                    const preview = document.getElementById('preview');
-                    async function show(path) {
-                        // Read from markdown file
-                        const rawFile = new XMLHttpRequest();
-                        rawFile.open("GET", path, false);
-                        rawFile.send(null);
-
-                        // Using GitHub Markdown API, and display HTML
-                        const rendered = await render(rawFile.response);
-                        preview.innerHTML = rendered;
-                        MathJax.typeset()
-                    }
-
-                    async function render(markdown) {
-                        return (await fetch('https://api.github.com/markdown', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify({'mode': 'markdown', 'text': markdown})
-                        })).text();
-                    }
-                </script>
+<!--                <p><textarea id="output" style="width: 80%; height: 10em"></textarea></p>-->
             </div>
 
-            <div class="bd-toc"></div>
+<!--            <div class="bd-toc bd-text">-->
+<!--                <div id="preview_small"  style="width: 200%; transform:scale(0.5); transform-origin: left top;">-->
+
+<!--                </div>-->
+<!--            </div>-->
+
+            <script>
+                const button = document.getElementById('wtf');
+                const preview = document.getElementById('preview');
+                // const output = document.getElementById('output');
+                // const preview_small = document.getElementById('preview_small');
+
+
+                async function show(path) {
+                    // Read from markdown file
+                    const rawFile = new XMLHttpRequest();
+                    rawFile.open("GET", path, false);
+                    rawFile.send(null);
+
+                    // Using GitHub Markdown API, and display HTML
+                    const rendered = await render(rawFile.response);
+                    preview.innerHTML = rendered;
+                    // output.value = rendered;
+                    // preview_small.innerHTML = rendered;
+
+                    MathJax.typeset()
+                }
+
+                async function render(markdown) {
+                    return (await fetch('https://api.github.com/markdown', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({'mode': 'markdown', 'text': markdown})
+                    })).text();
+                }
+            </script>
+
             <div class="bd-content"></div>
         </main>
     </div>

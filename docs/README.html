@@ -1,5 +1,8 @@
-<html>
-<head><style>body {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Docs_README</title>
+    <style>body {
     background-color:rgba(255, 255, 255, 0.618) !important;
 }
 </style>
@@ -8,14 +11,14 @@
     <link href="../css/custom.css" rel="stylesheet">
 </head><body>
 <h1>
-    <a id="user-content-welcome-to-docs-page" class="anchor" href="#welcome-to-docs-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Docs Page</h1>
+    <a id="user-content-welcome-to-docs-page" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Docs Page</h1>
 <p>This page serves as a file archive and provides fast access to them.</p>
 <p>Without leaving the page, you can navigate through all kinds of files, such as http pages, jupyter notebooks, and pdf files, etc...</p>
 <h2>
-    <a id="user-content-guide" class="anchor" href="#guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guide</h2>
-<p>This function is often restricted to used on external website, since the request to access other pages attributes due to <a href="https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame" rel="nofollow"><strong>Same-origin policy</strong></a>.</p>
+    <a id="user-content-guide" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Guide</h2>
+<p>My function need to access some attributes of external website, and it is often restricted due to <a href="https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame" rel="nofollow"><strong>Same-origin policy</strong></a>.</p>
 <h4>
-    <a id="user-content-to-have-auto-window-size-works-properly-there-are-two-solutions" class="anchor" href="#to-have-auto-window-size-works-properly-there-are-two-solutions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To have auto-window-size works properly, there are two solutions:</h4>
+    <a id="user-content-to-have-auto-window-size-function-works-properly-there-are-two-solutions" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To have <code>auto-window-size</code> function works properly, there are two solutions:</h4>
 <ol>
     <li>Click the switch on the navigation bar above to enable <code>&lt;iframe&gt;</code> window scrolling.</li>
     <li>For the best performance, disable the same-origin policy in your browser:*
@@ -28,7 +31,7 @@
 </ol>
 <p>*<strong>Warning: Disabling the same-origin policy this is very unsafe and should NEVER being done if you do not know exactly what you are doing.</strong></p>
 <h3>
-    <a id="user-content-implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IMPLEMENTATION</h3>
+    <a id="user-content-implementation" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IMPLEMENTATION</h3>
 <p>Page rendering is achieved by using <code>&lt;iframe&gt;</code> window in html. I implement an automatic iframe height adjuster using Javascript for full screen display as following,</p>
 <div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">resizeIframe</span><span class="pl-kos">(</span><span class="pl-s1">iframe</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
     <span class="pl-s1">iframe</span><span class="pl-kos">.</span><span class="pl-c1">style</span><span class="pl-kos">.</span><span class="pl-c1">height</span> <span class="pl-c1">=</span> <span class="pl-s1">iframe</span><span class="pl-kos">.</span><span class="pl-c1">contentWindow</span><span class="pl-kos">.</span><span class="pl-c1">document</span><span class="pl-kos">.</span><span class="pl-c1">documentElement</span><span class="pl-kos">.</span><span class="pl-c1">scrollHeight</span> <span class="pl-c1">+</span> <span class="pl-s">'px'</span><span class="pl-kos">;</span>

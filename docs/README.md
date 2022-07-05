@@ -4,9 +4,9 @@ This page serves as a file archive and provides fast access to them.
 Without leaving the page, you can navigate through all kinds of files, such as http pages, jupyter notebooks, and pdf files, etc...
 
 ## Guide
-This function is often restricted to used on external website, since the request to access other pages attributes due to [**Same-origin policy**](https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame).
+My function need to access some attributes of external website, and it is often restricted due to [**Same-origin policy**](https://stackoverflow.com/questions/25098021/securityerror-blocked-a-frame-with-origin-from-accessing-a-cross-origin-frame).
 
-#### To have auto-window-size works properly, there are two solutions:
+#### To have `auto-window-size` function works properly, there are two solutions:
 1. Click the switch on the navigation bar above to enable `<iframe>` window scrolling.
 2. For the best performance, disable the same-origin policy in your browser:*
    1. [Google Chrome](https://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome)

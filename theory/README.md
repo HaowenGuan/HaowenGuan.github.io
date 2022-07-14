@@ -8,7 +8,7 @@ The implementation of displaying math expressions is power by [MathJax](https://
 
 
 
-### Example: Math in TeX and LaTeX notation
+### Example of LaTeX in HTML
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 

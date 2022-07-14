@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <title>Haowen Guan Homepage</title>
@@ -11,7 +11,8 @@
 
     <style>
         body {
-            background-image: url('image/stars-s-b.jpeg');
+            background-image: url('image/stars-s-bt.jpeg');
+            position: relative;
         }
     </style>
 
@@ -24,7 +25,7 @@
     <script> window.MathJax = {tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}}; </script>
 </head>
 
-<body id="bd">
+<body id="bd" class="d-flex flex-column h-100" data-bs-spy="scroll" data-bs-target="#toc" data-bs-offset="64">
 <header class="navbar navbar-expand-md navbar-dark">
     <nav class="container-xl flex-wrap flex-md-nowrap" aria-label="Main navigation">
         <a class="navbar-brand p-0 me-2" href="index.html" aria-label="Bootstrap">
@@ -32,24 +33,7 @@
                  width="48pt" height="34pt" viewBox="0 0 450.000000 265.000000"
                  preserveAspectRatio="xMidYMid meet">
                 <g transform="translate(0,235) scale(0.05,-0.05)" fill="#f3f3f3" stroke="none">
-                    <path d="M4287 4010 c-697 -126 -1154 -555 -1488 -1396 -127 -320 -218 -388
-                                    -459 -340 -127 25 -117 48 50 123 186 84 218 132 48 72 -122 -43 -311 -83
-                                    -558 -118 -549 -78 -1513 -254 -1573 -288 -146 -81 1793 -103 3003 -33 88 5
-                                    358 14 600 21 242 6 593 20 780 30 187 10 547 27 800 39 253 11 546 29 650 40
-                                    105 10 330 28 500 40 171 12 436 34 590 50 154 15 483 43 730 62 912 68 603
-                                    179 -670 239 -659 31 -768 63 -888 263 -583 975 -1251 1353 -2115 1196z m681
-                                    -608 c288 -102 537 -316 667 -572 60 -121 75 -194 16 -83 -369 697 -1276 836
-                                    -1796 275 -163 -176 -294 -485 -295 -696 0 -57 -8 -66 -67 -77 -177 -33 -185
-                                    -12 -103 241 173 537 422 797 890 933 175 50 516 40 688 -21z m18 -111 c349
-                                    -123 606 -407 677 -748 38 -187 69 -177 -643 -212 -336 -17 -759 -41 -941 -54
-                                    -519 -36 -530 -29 -438 303 161 581 783 910 1345 711z M5930 2000 c-8 -12 23
-                                    -15 84 -8 126 15 136 28 21 28 -51 0 -98 -9
-                                    -105 -20z M5715 1913 c-64 -19 -89 -46 -164 -175 -382 -655 -1309 -695 -1760
-                                    -75 -49 67 -95 148 -102 179 -6 32 -21 63 -33 70 -55 35 72 -223 167 -340 396
-                                    -480 1127 -510 1592 -65 147 140 167 127 30 -19 -507 -542 -1320 -506 -1804
-                                    78 -66 79 -163 190 -215 245 l-96 102 -140 -9 c-229 -15 -251 -114 -95 -429
-                                    488 -981 1970 -1153 2757 -320 242 255 417 668 324 761 -31 31 -359 29 -461
-                                    -3z"/>
+                    <path d="M4287 4010 c-697 -126 -1154 -555 -1488 -1396 -127 -320 -218 -388 -459 -340 -127 25 -117 48 50 123 186 84 218 132 48 72 -122 -43 -311 -83 -558 -118 -549 -78 -1513 -254 -1573 -288 -146 -81 1793 -103 3003 -33 88 5 358 14 600 21 242 6 593 20 780 30 187 10 547 27 800 39 253 11 546 29 650 40 105 10 330 28 500 40 171 12 436 34 590 50 154 15 483 43 730 62 912 68 603 179 -670 239 -659 31 -768 63 -888 263 -583 975 -1251 1353 -2115 1196z m681 -608 c288 -102 537 -316 667 -572 60 -121 75 -194 16 -83 -369 697 -1276 836 -1796 275 -163 -176 -294 -485 -295 -696 0 -57 -8 -66 -67 -77 -177 -33 -185 -12 -103 241 173 537 422 797 890 933 175 50 516 40 688 -21z m18 -111 c349 -123 606 -407 677 -748 38 -187 69 -177 -643 -212 -336 -17 -759 -41 -941 -54 -519 -36 -530 -29 -438 303 161 581 783 910 1345 711z M5930 2000 c-8 -12 23 -15 84 -8 126 15 136 28 21 28 -51 0 -98 -9 -105 -20z M5715 1913 c-64 -19 -89 -46 -164 -175 -382 -655 -1309 -695 -1760 -75 -49 67 -95 148 -102 179 -6 32 -21 63 -33 70 -55 35 72 -223 167 -340 396 -480 1127 -510 1592 -65 147 140 167 127 30 -19 -507 -542 -1320 -506 -1804 78 -66 79 -163 190 -215 245 l-96 102 -140 -9 c-229 -15 -251 -114 -95 -429 488 -981 1970 -1153 2757 -320 242 255 417 668 324 761 -31 31 -359 29 -461 -3z"/>
                 </g>
             </svg>
             <strong>Haowen Guan</strong>
@@ -63,7 +47,7 @@
             <div class="d-flex flex-fill justify-content-center">
                 <ul class="navbar-nav pt-2 py-md-0">
                     <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="docs.html">Docs</a>
+                        <a class="nav-link p-2" href="docs.html">Document</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2 active" href="theory.html" aria-current="page">Theory</a>
@@ -93,18 +77,20 @@
                                  fill="currentColor" fill-rule="evenodd" width="36" height="36" viewBox="0 8 151 151">
                                 <g transform="translate(0,151) scale(0.05,-0.05)">
                                     <title>Tradingview</title>
-                                    <path d="M1099 2354 c-259 -74 -482 -312 -531 -569 -11 -57 -20 -65 -75 -65
-                                            -303 -3 -560 -387 -472 -705 29 -104 14 -112 478 260 411 330 417 336 427 421
-                                            32 286 417 281 449 -6 10 -87 21 -102 204 -266 l194 -174 108 1 108 2 265 277
-                                            c146 153 266 286 266 295 0 72 -340 108 -454 48 l-65 -33 -54 114 c-148 313
-                                            -526 491 -848 400z M2375 1411 c-271 -280 -275 -286 -275 -375 0 -113 -53 -186
-                                            -158 -218 -145 -43 -282 68 -282 229 0 63 -19 86 -199 245 l-200 176 -118 -1
-                                            -118 -1 -413 -335 c-228 -184 -411 -345 -406 -358 11 -35 131 -110 212 -133
-                                            130 -36 2248 -26 2338 11 325 136 351 600 41 761 -36 18 -57 45 -57 74 -1 40
-                                            -70 217 -84 212 -3 -1 -130 -130 -281 -287z"/>
+                                    <path d="M1099 2354 c-259 -74 -482 -312 -531 -569 -11 -57 -20 -65 -75 -65 -303 -3 -560 -387 -472 -705 29 -104 14 -112 478 260 411 330 417 336 427 421 32 286 417 281 449 -6 10 -87 21 -102 204 -266 l194 -174 108 1 108 2 265 277 c146 153 266 286 266 295 0 72 -340 108 -454 48 l-65 -33 -54 114 c-148 313 -526 491 -848 400z M2375 1411 c-271 -280 -275 -286 -275 -375 0 -113 -53 -186 -158 -218 -145 -43 -282 68 -282 229 0 63 -19 86 -199 245 l-200 176 -118 -1 -118 -1 -413 -335 c-228 -184 -411 -345 -406 -358 11 -35 131 -110 212 -133 130 -36 2248 -26 2338 11 325 136 351 600 41 761 -36 18 -57 45 -57 74 -1 40 -70 217 -84 212 -3 -1 -130 -130 -281 -287z"/>
                                 </g>
                             </svg>
                             <small class="d-md-none ms-2">Tradingview</small>
+                        </a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2 d-inline-flex align-items-center" href="https://www.zhihu.com/people/yilu-zhui-tai-yang-de-xiao-kai-sa" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-fill"
+                                 fill="currentColor" fill-rule="evenodd" height="32" width="32" viewBox="0 0 1024 1024">
+                                <title>Contact</title>
+                                <path d="M940.35 795.875c0 78.652-63.771 142.422-142.421 142.422H228.226c-78.655 0-142.427-63.772-142.427-142.422v-569.7c0-78.658 63.772-142.432 142.427-142.432H797.93c78.658 0 142.432 63.772 142.432 142.431l-0.01 569.701zM415.621 543.356h125.593c0-29.528-13.923-46.824-13.923-46.824H418.295c2.59-53.493 4.91-122.15 5.739-147.65h103.677s-0.561-43.871-12.091-43.871H333.378s10.971-57.374 25.594-82.7c0 0-54.417-2.938-72.98 69.622-18.562 72.56-46.404 116.43-49.356 124.446-2.953 8.013 16.031 3.795 24.044 0 8.015-3.797 44.294-16.876 54.84-67.496h56.35c0.76 32.082 2.99 130.397 2.287 147.649H258.15c-16.45 11.81-21.936 46.824-21.936 46.824h132.592c-5.53 36.615-15.239 83.813-28.817 108.835-21.513 39.655-32.904 75.934-110.525 138.368 0 0-12.657 9.28 26.576 5.906 39.231-3.372 76.356-13.498 102.087-64.963 13.378-26.756 27.213-60.697 38.006-95.121l-0.04 0.12 109.26 125.795s14.343-33.747 3.798-70.87l-80.994-90.698-27.42 20.279-0.031 0.099c7.615-26.7 13.092-53.095 14.795-76.061 0.042-0.553 0.084-1.119 0.121-1.689zM567.366 295.73v435.35h45.77l18.753 52.405 79.328-52.405h99.978V295.73H567.366zM764.09 684.253h-51.968l-64.817 42.817-15.319-42.817H615.81v-339.94h148.28v339.94z m0 0"></path>
+                            </svg>
+                            <small class="d-md-none ms-2">Zhihu</small>
                         </a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
@@ -161,269 +147,319 @@
     </div>
 </nav>
 
-    <div class="container-xl my-md-4 bd-layout" >
-        <aside class="bd-sidebar">
-            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
-                <ul class="list-unstyled mb-0 py-3 pt-md-1">
-                    <li class="mb-1">
-                        <button class="btn sidebar-branch d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">
-                            README
-                        </button>
 
-                        <div class="collapse show" id="getting-started-collapse" style="">
-                            <ul class="list-unstyled fw-normal pb-1 small">
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="1-1"
-                                           onclick="show('theory/README.md')" checked>
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-1">Introduction</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="1-2"
-                                           onclick="show('docs/README.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Docs-README</label>
-                                </li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
-                            Leetcode
-                        </button>
 
-                        <div class="collapse" id="customize-collapse">
-                            <ul class="list-unstyled fw-normal pb-1 small">
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-0"
-                                           onclick="show('theory/leetcode/README.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-0">Introduction</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-p"
-                                           onclick="show('theory/leetcode/python_note.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-p">Python Notes</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-108"
-                                           onclick="show('theory/leetcode/q108.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-108">Q108</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-110"
-                                           onclick="show('theory/leetcode/q110.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-110">Q110</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-111"
-                                           onclick="show('theory/leetcode/q111.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-111">Q111</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-112"
-                                           onclick="show('theory/leetcode/q112.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-112">Q112</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-118"
-                                           onclick="show('theory/leetcode/q118.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-118">Q116</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-119"
-                                           onclick="show('theory/leetcode/q119.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-119">Q119</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-121-2-3"
-                                           onclick="show('theory/leetcode/q121-2-3.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-121-2-3">Q121-2-3</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-125"
-                                           onclick="show('theory/leetcode/q125.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-125">Q125</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-136"
-                                           onclick="show('theory/leetcode/q136.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-136">Q136</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="btn-check" name="sidebar" id="2-450"
-                                           onclick="show('theory/leetcode/q450.md')">
-                                    <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-450">Q450</label>
-                                </li>
+<div class="container-xl my-md-4 bd-layout">
+    <aside class="bd-sidebar">
+        <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+            <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                <li class="mb-1">
+                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">
+                        README
+                    </button>
 
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
-                            Layout
-                        </button>
+                    <div class="collapse show" id="getting-started-collapse" style="">
+                        <ul class="list-unstyled fw-normal pb-1 small">
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="1-1"
+                                       onclick="show('theory/README.md')" checked>
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-1">Introduction</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="1-2"
+                                       onclick="show('theory/leetcode/q121-2-3.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Example</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="true" aria-current="true">
+                        Leetcode
+                    </button>
 
-                        <div class="collapse" id="layout-collapse">
-                            <ul class="list-unstyled fw-normal pb-1 small">
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
-                            Content
-                        </button>
+                    <div class="collapse show" id="customize-collapse">
+                        <ul class="list-unstyled fw-normal pb-1 small">
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-0"
+                                       onclick="show('theory/leetcode/README.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-0">Introduction</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-p"
+                                       onclick="show('theory/leetcode/python_note.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-p">Python Notes</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-108"
+                                       onclick="show('theory/leetcode/q108.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-108">Q108</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-110"
+                                       onclick="show('theory/leetcode/q110.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-110">Q110</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-111"
+                                       onclick="show('theory/leetcode/q111.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-111">Q111</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-112"
+                                       onclick="show('theory/leetcode/q112.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-112">Q112</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-118"
+                                       onclick="show('theory/leetcode/q118.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-118">Q118</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-119"
+                                       onclick="show('theory/leetcode/q119.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-119">Q119</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-121-2-3"
+                                       onclick="show('theory/leetcode/q121-2-3.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-121-2-3">Q121-2-3</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-125"
+                                       onclick="show('theory/leetcode/q125.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-125">Q125</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-136"
+                                       onclick="show('theory/leetcode/q136.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-136">Q136</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-450"
+                                       onclick="show('theory/leetcode/q450.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-450">Q450</label>
+                            </li>
 
-                        <div class="collapse" id="content-collapse">
-                            <ul class="list-unstyled fw-normal pb-1 small">
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                                <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
-                            </ul>
-                        </div>
-                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false">
+                        Layout
+                    </button>
 
-                    <li class="my-3 mx-4 border-top"></li>
-                    <li>
-                        <a href="" class="d-inline-flex align-items-center rounded">
-                            Haowen Guan
-                        </a>
-                    </li>
+                    <div class="collapse" id="layout-collapse">
+                        <ul class="list-unstyled fw-normal pb-1 small">
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                            <li><a href="" class="d-inline-flex align-items-center rounded">Blank</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#content-collapse" aria-expanded="false">
+                        Archive
+                    </button>
+
+                    <div class="collapse" id="content-collapse">
+                        <ul class="list-unstyled fw-normal pb-1 small">
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="4-1"
+                                       onclick="show('docs/README.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="4-1">Docs-README</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="my-3 mx-4 border-top"></li>
+                <li>
+                    <a href="" class="d-inline-flex align-items-center rounded">
+                        Haowen Guan
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+
+
+    <main class="bd-main order-1">
+        <div class="bd-intro bd-text" >
+            <div id="preview">
+                <h1><a id="Welcome_to_Theory_Page1">Welcome to Theory Page</a></h1>
+                <p>This page is a navigator to all my blogs and study notes. It's capable to view Markdown file and Mathematical expressions directly in-place of the static html website.</p>
+                <h2><a id="Implementation2">Implementation</a></h2>
+                <p>This page renders Markdown file using <a href="https://docs.github.com/en/rest/markdown">GitHub Markdown API</a>. According to GitHub document, every unauthenticated clients is limited to 60 requests per hour.</p>
+                <p>The implementation of displaying math expressions is power by <a href="https://www.mathjax.org">MathJax</a> library.</p>
+                <h3><a id="Example_of_LaTeX_in_HTML3">Example of LaTeX in HTML</a></h3>
+                <p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
+                    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+                <p>
+                    $$ \begin{array}{rcll}
+                    y &amp; = &amp; x^{2}+bx+c\\
+                    &amp; = &amp; x^{2}+2\times\dfrac{b}{2}x+c\\
+                    &amp; = &amp; \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
+                    {\left(\dfrac{b}{2}\right)^{2}+c}\\
+                    &amp;  &amp; \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+                    &amp; = &amp; \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
+                    &amp; \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+                    y+\left(\dfrac{b}{2}\right)^{2}-c &amp; = &amp; \left(x+
+                    \dfrac{b}{2}\right)^{2} &amp; \left|\strut(\textrm{vertex form})\right.\\
+                    y-y_{S} &amp; = &amp; (x-x_{S})^{2}\\
+                    S(x_{S};y_{S}) &amp; \,\textrm{or}\,
+                    &amp; S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
+                    \end{array} $$
+                </p>
+            </div>
+<!--                <p><textarea id="output" style="width: 80%; height: 10em"></textarea></p>-->
+        </div>
+
+        <div class="bd-toc pt-2">
+            <nav id="toc" class="nav-pills">
+                <ul>
+                    <li><a class="nav-link active"  href="#Welcome_to_Theory_Page1">Welcome to Theory Page</a></li>
+                    <ul>
+                        <li><a class="nav-link" href="#Implementation2">Implementation</a></li>
+                        <ul>
+                            <li><a class="nav-link" href="#Example_of_LaTeX_in_HTML3">Example <br> Math in TeX and LaTeX notation</a></li>
+                        </ul>
+                    </ul>
                 </ul>
             </nav>
-        </aside>
+        </div>
 
+        <script>
+            const button = document.getElementById('wtf');
+            const preview = document.getElementById('preview');
 
-        <main class="bd-main order-1">
-            <div class="bd-intro bd-text" >
-                <div id="preview">
-                    <h1>
-                        <a id="user-content-welcome-to-theory-page" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Theory Page</h1>
-                    <p>This page is a navigator to all my blogs and study notes. It's capable to view Markdown file and Mathematical expressions directly in-place of the static html website.</p>
-                    <h2>
-                        <a id="user-content-implementation" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
-                    <p>This page renders Markdown file using <a href="https://docs.github.com/en/rest/markdown">GitHub Markdown API</a>. According to GitHub document, every unauthenticated clients is limited to 60 requests per hour.</p>
-                    <p>The implementation of displaying math expressions is power by <a href="https://www.mathjax.org" rel="nofollow">MathJax</a> library.</p>
-                    <h3>
-                        <a id="user-content-example-math-in-tex-and-latex-notation" class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example: Math in TeX and LaTeX notation</h3>
-                    <p>When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
-                    <p>
-                        $$ \begin{array}{rcll}
-                        y &amp; = &amp; x^{2}+bx+c\\
-                        &amp; = &amp; x^{2}+2\times\dfrac{b}{2}x+c\\
-                        &amp; = &amp; \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
-                        {\left(\dfrac{b}{2}\right)^{2}+c}\\
-                        &amp;  &amp; \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
-                        &amp; = &amp; \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
-                        &amp; \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
-                        y+\left(\dfrac{b}{2}\right)^{2}-c &amp; = &amp; \left(x+
-                        \dfrac{b}{2}\right)^{2} &amp; \left|\strut(\textrm{vertex form})\right.\\
-                        y-y_{S} &amp; = &amp; (x-x_{S})^{2}\\
-                        S(x_{S};y_{S}) &amp; \,\textrm{or}\,
-                        &amp; S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
-                        \end{array} $$
-                    </p>
-                </div>
-<!--                <p><textarea id="output" style="width: 80%; height: 10em"></textarea></p>-->
-            </div>
+            async function show(path) {
+                // Read from markdown file
+                const rawFile = new XMLHttpRequest();
+                rawFile.open("GET", path, false);
+                rawFile.send(null);
 
-<!--            <div class="bd-toc bd-text">-->
-<!--                <div id="preview_small"  style="width: 200%; transform:scale(0.5); transform-origin: left top;">-->
+                // Using GitHub Markdown API, and display HTML
+                preview.innerHTML = await render(rawFile.response);
 
-<!--                </div>-->
-<!--            </div>-->
+                Array.from(
+                    preview.querySelectorAll('[aria-hidden]')
+                ).forEach(el => el.parentNode.removeChild(el));
+                Array.from(
+                    preview.querySelectorAll('[rel="nofollow"]')
+                ).forEach(el => el.removeAttribute('rel'));
+                // <div class="highlight highlight-source-python">
+                Array.from(
+                    preview.querySelectorAll('div.highlight-source-python')
+                ).forEach(el => el.replaceWith(el.firstChild));
+                /* Remove <a href="https://camo.githubusercontent.com"... wrapper
+                links around images, and replace src= with data-canonical-src= */
+                Array.from(
+                    preview.querySelectorAll(
+                        'a[href^="https://camo.githubusercontent.com"]'
+                    )
+                ).forEach(el => el.replaceWith(el.firstChild));
+                Array.from(
+                    preview.querySelectorAll(
+                        'img[data-canonical-src]'
+                    )
+                ).forEach(
+                    el => {
+                        el.setAttribute('src', el.getAttribute('data-canonical-src'));
+                        el.removeAttribute('data-canonical-src');
+                    }
+                );
+                preview.innerHTML = preview.innerHTML.replace(
+                    /<h([1-6])>\n/g, '<h$1>'
+                ).replace(
+                    /<br>/g, '<br />'
+                ).replace(
+                    /<img ([^>].+?)>/g, '<img $1 />'
+                );
 
-            <script>
-                const button = document.getElementById('wtf');
-                const preview = document.getElementById('preview');
-                // const output = document.getElementById('output');
-                // const preview_small = document.getElementById('preview_small');
+                // Generate toc
+                let toc = "";
+                let level = 0;
+                let iter = 0;
 
+                preview.innerHTML = preview.innerHTML.replace(
+                    /<h([\d])>([^\/]+)<\/h([\d])>/gi,
+                    function (str, openLevel, titleText, closeLevel) {
+                        if (openLevel !== closeLevel) {
+                            return openLevel + titleText + closeLevel + str;
+                        }
+                        iter += 1;
 
-                async function show(path) {
-                    // Read from markdown file
-                    const rawFile = new XMLHttpRequest();
-                    rawFile.open("GET", path, false);
-                    rawFile.send(null);
+                        if (openLevel > level) {
+                            toc += (new Array(openLevel - level + 1)).join("<ul>");
+                        } else if (openLevel < level) {
+                            toc += (new Array(level - openLevel + 1)).join("</ul>");
+                        }
 
-                    // Using GitHub Markdown API, and display HTML
-                    const rendered = await render(rawFile.response);
-                    preview.innerHTML = rendered;
-                    // output.value = rendered;
-                    // preview_small.innerHTML = rendered;
+                        level = parseInt(openLevel);
 
-                    MathJax.typeset()
+                        var anchor = titleText.replace(/<br>/g, "").replace(/ /g, "_") + iter;
+                        toc += "<li><a class=\"nav-link\" href=\"#" + anchor + "\">" + titleText + "</a></li>";
+
+                        return "<h" + openLevel + "><a id=\"" + anchor + "\">"
+                            + titleText + "</a></h" + closeLevel + ">";
+                    }
+                );
+
+                if (level) {
+                    toc += (new Array(level + 1)).join("</ul>");
                 }
 
-                async function render(markdown) {
-                    return (await fetch('https://api.github.com/markdown', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({'mode': 'markdown', 'text': markdown})
-                    })).text();
-                }
-            </script>
+                document.getElementById("toc").innerHTML = toc;
 
-            <div class="bd-content"></div>
-        </main>
-    </div>
+                // document.getElementById('output').value = preview.innerHTML;
+
+                MathJax.typeset()
+            }
+
+            async function render(markdown) {
+                return (await fetch('https://api.github.com/markdown', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({'mode': 'markdown', 'text': markdown})
+                })).text();
+            }
+
+        </script>
+
+        <div class="bd-content"></div>
+    </main>
+</div>
 
 
 
+<div class="container-xl mt-auto" style="color:rgba(255,255,255,0.8);font-size:0.875em;">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-3 border-top">
+        <p class="col-md-4 mb-0">
+            © 2022 Haowen Guan, Powered by <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.
+        </p>
 
+        <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg xmlns="http://www.w3.org/2000/svg" opacity="0.6"
+                 width="48pt" height="32pt" viewBox="0 0 450.000000 265.000000"
+                 preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0,235) scale(0.05,-0.05)" fill="#f3f3f3" stroke="none">
+                    <path d="M4287 4010 c-697 -126 -1154 -555 -1488 -1396 -127 -320 -218 -388 -459 -340 -127 25 -117 48 50 123 186 84 218 132 48 72 -122 -43 -311 -83 -558 -118 -549 -78 -1513 -254 -1573 -288 -146 -81 1793 -103 3003 -33 88 5 358 14 600 21 242 6 593 20 780 30 187 10 547 27 800 39 253 11 546 29 650 40 105 10 330 28 500 40 171 12 436 34 590 50 154 15 483 43 730 62 912 68 603 179 -670 239 -659 31 -768 63 -888 263 -583 975 -1251 1353 -2115 1196z m681 -608 c288 -102 537 -316 667 -572 60 -121 75 -194 16 -83 -369 697 -1276 836 -1796 275 -163 -176 -294 -485 -295 -696 0 -57 -8 -66 -67 -77 -177 -33 -185 -12 -103 241 173 537 422 797 890 933 175 50 516 40 688 -21z m18 -111 c349 -123 606 -407 677 -748 38 -187 69 -177 -643 -212 -336 -17 -759 -41 -941 -54 -519 -36 -530 -29 -438 303 161 581 783 910 1345 711z M5930 2000 c-8 -12 23 -15 84 -8 126 15 136 28 21 28 -51 0 -98 -9 -105 -20z M5715 1913 c-64 -19 -89 -46 -164 -175 -382 -655 -1309 -695 -1760 -75 -49 67 -95 148 -102 179 -6 32 -21 63 -33 70 -55 35 72 -223 167 -340 396 -480 1127 -510 1592 -65 147 140 167 127 30 -19 -507 -542 -1320 -506 -1804 78 -66 79 -163 190 -215 245 l-96 102 -140 -9 c-229 -15 -251 -114 -95 -429 488 -981 1970 -1153 2757 -320 242 255 417 668 324 761 -31 31 -359 29 -461 -3z"/>
+                </g>
+            </svg>
+        </a>
 
-    <div class="container-xl" style="color:rgba(255,255,255,0.8);font-size:0.875em;">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-3 border-top">
-            <p class="col-md-4 mb-0">
-                © 2022 Haowen Guan, Powered by <a href="https://getbootstrap.com" target="_blank">Bootstrap</a>.
-            </p>
+        <p class="col-md-4 mb-0" align="right">
+            Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            CC-BY-NC-SA 4.0</a> License.</p>
+    </footer>
+</div>
 
-            <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" opacity="0.6"
-                     width="48pt" height="32pt" viewBox="0 0 450.000000 265.000000"
-                     preserveAspectRatio="xMidYMid meet">
-                    <g transform="translate(0,235) scale(0.05,-0.05)" fill="#f3f3f3" stroke="none">
-                        <path d="M4287 4010 c-697 -126 -1154 -555 -1488 -1396 -127 -320 -218 -388
-                                    -459 -340 -127 25 -117 48 50 123 186 84 218 132 48 72 -122 -43 -311 -83
-                                    -558 -118 -549 -78 -1513 -254 -1573 -288 -146 -81 1793 -103 3003 -33 88 5
-                                    358 14 600 21 242 6 593 20 780 30 187 10 547 27 800 39 253 11 546 29 650 40
-                                    105 10 330 28 500 40 171 12 436 34 590 50 154 15 483 43 730 62 912 68 603
-                                    179 -670 239 -659 31 -768 63 -888 263 -583 975 -1251 1353 -2115 1196z m681
-                                    -608 c288 -102 537 -316 667 -572 60 -121 75 -194 16 -83 -369 697 -1276 836
-                                    -1796 275 -163 -176 -294 -485 -295 -696 0 -57 -8 -66 -67 -77 -177 -33 -185
-                                    -12 -103 241 173 537 422 797 890 933 175 50 516 40 688 -21z m18 -111 c349
-                                    -123 606 -407 677 -748 38 -187 69 -177 -643 -212 -336 -17 -759 -41 -941 -54
-                                    -519 -36 -530 -29 -438 303 161 581 783 910 1345 711z M5930 2000 c-8 -12 23
-                                    -15 84 -8 126 15 136 28 21 28 -51 0 -98 -9
-                                    -105 -20z M5715 1913 c-64 -19 -89 -46 -164 -175 -382 -655 -1309 -695 -1760
-                                    -75 -49 67 -95 148 -102 179 -6 32 -21 63 -33 70 -55 35 72 -223 167 -340 396
-                                    -480 1127 -510 1592 -65 147 140 167 127 30 -19 -507 -542 -1320 -506 -1804
-                                    78 -66 79 -163 190 -215 245 l-96 102 -140 -9 c-229 -15 -251 -114 -95 -429
-                                    488 -981 1970 -1153 2757 -320 242 255 417 668 324 761 -31 31 -359 29 -461
-                                    -3z"/>
-                    </g>
-                </svg>
-            </a>
-
-            <p class="col-md-4 mb-0" align="right">
-                Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-                CC-BY-NC-SA 4.0</a> License.</p>
-        </footer>
-    </div>
 </body>
 </html>

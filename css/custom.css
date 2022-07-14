@@ -1,6 +1,6 @@
 .bd-text {
     color:rgba(222, 218, 214, 1);
-    /*background-color:rgba(0, 0, 0, 0.382);*/
+    /*background-color:rgba(36, 37, 39, 0.8);*/
     background-color:rgba(0, 0, 0, 0.618);
 
 }
@@ -8,6 +8,10 @@
 .invert{
     filter: invert(100%);
     background-image: url('../image/stars-s-w.jpeg');
+}
+
+.not-invert{
+    filter: invert(100%);
 }
 
 .pl-c /* comment, punctuation.definition.comment, string.comment */ {
@@ -230,7 +234,7 @@ h6 {
 .btn-switch:hover {
     color: rgba(255, 255, 255, 1);
     /*background-color: rgba(255, 255, 255, 0.1);*/
-    border-color: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.6);
 
 }
 .btn-check:checked + .btn-switch, .btn-check:active + .btn-switch, .btn-switch:active, .btn-switch.active, .btn-switch.dropdown-toggle.show {

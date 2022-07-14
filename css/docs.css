@@ -1026,7 +1026,7 @@
 }
 
 .bd-toc nav {
-    font-size:.875rem
+    font-size:1rem
 }
 
 .bd-toc nav ul {
@@ -1041,14 +1041,6 @@
 
 .bd-toc nav li {
     margin-bottom:.25rem
-}
-
-.bd-toc nav a {
-    color:inherit
-}
-
-.bd-toc nav a:not(:hover) {
-    text-decoration:none
 }
 
 .bd-toc nav a code {

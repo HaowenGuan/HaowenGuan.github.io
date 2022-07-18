@@ -3974,11 +3974,13 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   border-radius: 0.25rem;
+  font-size: 0.875rem;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(222, 218, 214, 1);
+;
 }
 
 .nav-fill > .nav-link,

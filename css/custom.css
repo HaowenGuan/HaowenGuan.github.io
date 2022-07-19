@@ -9,9 +9,13 @@
     color:rgba(222, 218, 214, 1);
 }
 
+/*.bd-shadow {*/
+/*    box-shadow: 0 0px 0px 0px white, 0 0px 0px 0px white, 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 15px -4px rgba(31, 73, 125, 0.8);*/
+/*}*/
+
 .bd-shadow {
-    background-color:rgba(255, 255, 255, 0.1);
-    box-shadow:0 0rem 1rem rgba(255, 255, 255, 0.2), inset 0 0px 0 rgba(255, 255, 255, 0.5);
+    box-shadow:-10px 0px 10px -10px rgba(255, 255, 255, 0.5), 10px 0px 10px -10px rgba(255, 255, 255, 0.5) inset, 10px 0px 10px -10px rgba(255, 255, 255, 0.5), -10px 0px 10px -10px rgba(255, 255, 255, 0.5) inset;
+    border-radius: 15px;
 }
 
 .invert{

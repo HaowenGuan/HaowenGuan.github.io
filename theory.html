@@ -168,139 +168,1315 @@
                             </li>
                             <li>
                                 <input type="radio" class="btn-check" name="sidebar" id="1-2"
-                                       onclick="show('theory/leetcode/q121-2-3.md')">
+                                       onclick="show('theory/leetcode/series/q121-2-3.md')">
                                 <label class="btn btn-radio-HG d-inline-flex align-items-center" for="1-2">Example</label>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li class="mb-1">
-                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="true" aria-current="true">
+                    <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#leetcode-collapse" aria-expanded="true" aria-current="true">
                         Leetcode
                     </button>
 
-                    <div class="collapse show" id="customize-collapse">
+                    <div class="collapse show" id="leetcode-collapse">
                         <ul class="list-unstyled fw-normal pb-1 small">
                             <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-0"
+                                <input type="radio" class="btn-check" name="sidebar" id="2-r"
                                        onclick="show('theory/leetcode/README.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-0">Introduction</label>
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-r">Introduction</label>
                             </li>
                             <li>
                                 <input type="radio" class="btn-check" name="sidebar" id="2-l"
-                                       onclick="show('theory/leetcode/leetcode-notes.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-l">Leetcode Notes</label>
+                                       onclick="show('theory/leetcode/leetcode_note.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-l">Leetcode Note</label>
                             </li>
                             <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-108"
-                                       onclick="show('theory/leetcode/q108.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-108">Q108</label>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-sql"
+                                       onclick="show('theory/leetcode/sql_note.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-sql">SQL Note</label>
                             </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-110"
-                                       onclick="show('theory/leetcode/q110.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-110">Q110</label>
+
+                            <li class="mb-1 indent">
+                                <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#easy-collapse" aria-expanded="false">
+                                    Easy
+                                </button>
+                                <div class="collapse" id="easy-collapse">
+                                    <ul class="list-unstyled fw-normal pb-1">
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-108"
+                                                   onclick="show('theory/leetcode/easy/q108.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-108">Q108</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-110"
+                                                   onclick="show('theory/leetcode/easy/q110.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-110">Q110</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-111"
+                                                   onclick="show('theory/leetcode/easy/q111.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-111">Q111</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-112"
+                                                   onclick="show('theory/leetcode/easy/q112.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-112">Q112</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-118"
+                                                   onclick="show('theory/leetcode/easy/q118.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-118">Q118</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-119"
+                                                   onclick="show('theory/leetcode/easy/q119.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-119">Q119</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-125"
+                                                   onclick="show('theory/leetcode/easy/q125.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-125">Q125</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-136"
+                                                   onclick="show('theory/leetcode/easy/q136.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-136">Q136</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-160"
+                                                   onclick="show('theory/leetcode/easy/q160.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-160">Q160</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-163"
+                                                   onclick="show('theory/leetcode/easy/q163.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-163">Q163</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-168"
+                                                   onclick="show('theory/leetcode/easy/q168.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-168">Q168</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-169"
+                                                   onclick="show('theory/leetcode/easy/q169.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-169">Q169</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-170"
+                                                   onclick="show('theory/leetcode/easy/q170.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-170">Q170</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-171"
+                                                   onclick="show('theory/leetcode/easy/q171.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-171">Q171</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-190"
+                                                   onclick="show('theory/leetcode/easy/q190.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-190">Q190</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-191"
+                                                   onclick="show('theory/leetcode/easy/q191.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-191">Q191</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-202"
+                                                   onclick="show('theory/leetcode/easy/q202.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-202">Q202</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-203"
+                                                   onclick="show('theory/leetcode/easy/q203.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-203">Q203</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-205"
+                                                   onclick="show('theory/leetcode/easy/q205.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-205">Q205</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-206"
+                                                   onclick="show('theory/leetcode/easy/q206.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-206">Q206</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-217"
+                                                   onclick="show('theory/leetcode/easy/q217.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-217">Q217</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-219"
+                                                   onclick="show('theory/leetcode/easy/q219.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-219">Q219</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-225"
+                                                   onclick="show('theory/leetcode/easy/q225.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-225">Q225</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-226"
+                                                   onclick="show('theory/leetcode/easy/q226.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-226">Q226</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-228"
+                                                   onclick="show('theory/leetcode/easy/q228.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-228">Q228</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-231"
+                                                   onclick="show('theory/leetcode/easy/q231.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-231">Q231</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-232"
+                                                   onclick="show('theory/leetcode/easy/q232.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-232">Q232</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-234"
+                                                   onclick="show('theory/leetcode/easy/q234.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-234">Q234</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-235"
+                                                   onclick="show('theory/leetcode/easy/q235.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-235">Q235</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-237"
+                                                   onclick="show('theory/leetcode/easy/q237.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-237">Q237</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-242"
+                                                   onclick="show('theory/leetcode/easy/q242.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-242">Q242</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-243"
+                                                   onclick="show('theory/leetcode/easy/q243.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-243">Q243</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-246"
+                                                   onclick="show('theory/leetcode/easy/q246.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-246">Q246</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-252"
+                                                   onclick="show('theory/leetcode/easy/q252.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-252">Q252</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-257"
+                                                   onclick="show('theory/leetcode/easy/q257.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-257">Q257</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-258"
+                                                   onclick="show('theory/leetcode/easy/q258.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-258">Q258</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-263"
+                                                   onclick="show('theory/leetcode/easy/q263.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-263">Q263</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-266"
+                                                   onclick="show('theory/leetcode/easy/q266.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-266">Q266</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-268"
+                                                   onclick="show('theory/leetcode/easy/q268.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-268">Q268</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-270"
+                                                   onclick="show('theory/leetcode/easy/q270.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-270">Q270</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-278"
+                                                   onclick="show('theory/leetcode/easy/q278.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-278">Q278</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-283"
+                                                   onclick="show('theory/leetcode/easy/q283.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-283">Q283</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-290"
+                                                   onclick="show('theory/leetcode/easy/q290.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-290">Q290</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-292"
+                                                   onclick="show('theory/leetcode/easy/q292.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-292">Q292</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-293"
+                                                   onclick="show('theory/leetcode/easy/q293.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-293">Q293</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-303"
+                                                   onclick="show('theory/leetcode/easy/q303.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-303">Q303</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-326"
+                                                   onclick="show('theory/leetcode/easy/q326.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-326">Q326</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-338"
+                                                   onclick="show('theory/leetcode/easy/q338.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-338">Q338</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-342"
+                                                   onclick="show('theory/leetcode/easy/q342.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-342">Q342</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-344"
+                                                   onclick="show('theory/leetcode/easy/q344.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-344">Q344</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-345"
+                                                   onclick="show('theory/leetcode/easy/q345.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-345">Q345</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-346"
+                                                   onclick="show('theory/leetcode/easy/q346.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-346">Q346</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-349"
+                                                   onclick="show('theory/leetcode/easy/q349.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-349">Q349</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-350"
+                                                   onclick="show('theory/leetcode/easy/q350.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-350">Q350</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-359"
+                                                   onclick="show('theory/leetcode/easy/q359.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-359">Q359</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-367"
+                                                   onclick="show('theory/leetcode/easy/q367.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-367">Q367</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-374"
+                                                   onclick="show('theory/leetcode/easy/q374.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-374">Q374</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-383"
+                                                   onclick="show('theory/leetcode/easy/q383.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-383">Q383</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-387"
+                                                   onclick="show('theory/leetcode/easy/q387.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-387">Q387</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-389"
+                                                   onclick="show('theory/leetcode/easy/q389.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-389">Q389</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-392"
+                                                   onclick="show('theory/leetcode/easy/q392.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-392">Q392</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-401"
+                                                   onclick="show('theory/leetcode/easy/q401.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-401">Q401</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-404"
+                                                   onclick="show('theory/leetcode/easy/q404.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-404">Q404</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-405"
+                                                   onclick="show('theory/leetcode/easy/q405.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-405">Q405</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-408"
+                                                   onclick="show('theory/leetcode/easy/q408.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-408">Q408</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-409"
+                                                   onclick="show('theory/leetcode/easy/q409.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-409">Q409</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-412"
+                                                   onclick="show('theory/leetcode/easy/q412.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-412">Q412</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-414"
+                                                   onclick="show('theory/leetcode/easy/q414.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-414">Q414</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-415"
+                                                   onclick="show('theory/leetcode/easy/q415.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-415">Q415</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-422"
+                                                   onclick="show('theory/leetcode/easy/q422.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-422">Q422</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-434"
+                                                   onclick="show('theory/leetcode/easy/q434.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-434">Q434</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-441"
+                                                   onclick="show('theory/leetcode/easy/q441.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-441">Q441</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-448"
+                                                   onclick="show('theory/leetcode/easy/q448.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-448">Q448</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-455"
+                                                   onclick="show('theory/leetcode/easy/q455.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-455">Q455</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-459"
+                                                   onclick="show('theory/leetcode/easy/q459.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-459">Q459</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-461"
+                                                   onclick="show('theory/leetcode/easy/q461.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-461">Q461</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-463"
+                                                   onclick="show('theory/leetcode/easy/q463.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-463">Q463</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-476"
+                                                   onclick="show('theory/leetcode/easy/q476.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-476">Q476</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-482"
+                                                   onclick="show('theory/leetcode/easy/q482.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-482">Q482</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-485"
+                                                   onclick="show('theory/leetcode/easy/q485.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-485">Q485</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-492"
+                                                   onclick="show('theory/leetcode/easy/q492.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-492">Q492</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-495"
+                                                   onclick="show('theory/leetcode/easy/q495.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-495">Q495</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-496"
+                                                   onclick="show('theory/leetcode/easy/q496.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-496">Q496</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-500"
+                                                   onclick="show('theory/leetcode/easy/q500.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-500">Q500</label>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-111"
-                                       onclick="show('theory/leetcode/q111.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-111">Q111</label>
+
+                            <li class="mb-1 indent">
+                                <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#medium-collapse" aria-expanded="false">
+                                    Medium
+                                </button>
+                                <div class="collapse" id="medium-collapse">
+                                    <ul class="list-unstyled fw-normal pb-1">
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-2"
+                                                   onclick="show('theory/leetcode/medium/q2.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-2">Q2</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-3"
+                                                   onclick="show('theory/leetcode/medium/q3.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-3">Q3</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-5"
+                                                   onclick="show('theory/leetcode/medium/q5.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-5">Q5</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-6"
+                                                   onclick="show('theory/leetcode/medium/q6.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-6">Q6</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-7"
+                                                   onclick="show('theory/leetcode/medium/q7.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-7">Q7</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-8"
+                                                   onclick="show('theory/leetcode/medium/q8.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-8">Q8</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-11"
+                                                   onclick="show('theory/leetcode/medium/q11.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-11">Q11</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-12"
+                                                   onclick="show('theory/leetcode/medium/q12.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-12">Q12</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-15"
+                                                   onclick="show('theory/leetcode/medium/q15.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-15">Q15</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-16"
+                                                   onclick="show('theory/leetcode/medium/q16.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-16">Q16</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-17"
+                                                   onclick="show('theory/leetcode/medium/q17.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-17">Q17</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-18"
+                                                   onclick="show('theory/leetcode/medium/q18.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-18">Q18</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-19"
+                                                   onclick="show('theory/leetcode/medium/q19.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-19">Q19</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-22"
+                                                   onclick="show('theory/leetcode/medium/q22.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-22">Q22</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-24"
+                                                   onclick="show('theory/leetcode/medium/q24.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-24">Q24</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-29"
+                                                   onclick="show('theory/leetcode/medium/q29.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-29">Q29</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-31"
+                                                   onclick="show('theory/leetcode/medium/q31.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-31">Q31</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-33"
+                                                   onclick="show('theory/leetcode/medium/q33.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-33">Q33</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-34"
+                                                   onclick="show('theory/leetcode/medium/q34.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-34">Q34</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-36"
+                                                   onclick="show('theory/leetcode/medium/q36.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-36">Q36</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-38"
+                                                   onclick="show('theory/leetcode/medium/q38.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-38">Q38</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-39"
+                                                   onclick="show('theory/leetcode/medium/q39.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-39">Q39</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-40"
+                                                   onclick="show('theory/leetcode/medium/q40.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-40">Q40</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-43"
+                                                   onclick="show('theory/leetcode/medium/q43.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-43">Q43</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-45"
+                                                   onclick="show('theory/leetcode/medium/q45.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-45">Q45</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-46"
+                                                   onclick="show('theory/leetcode/medium/q46.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-46">Q46</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-47"
+                                                   onclick="show('theory/leetcode/medium/q47.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-47">Q47</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-48"
+                                                   onclick="show('theory/leetcode/medium/q48.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-48">Q48</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-49"
+                                                   onclick="show('theory/leetcode/medium/q49.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-49">Q49</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-50"
+                                                   onclick="show('theory/leetcode/medium/q50.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-50">Q50</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-53"
+                                                   onclick="show('theory/leetcode/medium/q53.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-53">Q53</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-54"
+                                                   onclick="show('theory/leetcode/medium/q54.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-54">Q54</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-55"
+                                                   onclick="show('theory/leetcode/medium/q55.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-55">Q55</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-56"
+                                                   onclick="show('theory/leetcode/medium/q56.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-56">Q56</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-57"
+                                                   onclick="show('theory/leetcode/medium/q57.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-57">Q57</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-59"
+                                                   onclick="show('theory/leetcode/medium/q59.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-59">Q59</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-61"
+                                                   onclick="show('theory/leetcode/medium/q61.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-61">Q61</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-62"
+                                                   onclick="show('theory/leetcode/medium/q62.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-62">Q62</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-63"
+                                                   onclick="show('theory/leetcode/medium/q63.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-63">Q63</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-64"
+                                                   onclick="show('theory/leetcode/medium/q64.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-64">Q64</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-71"
+                                                   onclick="show('theory/leetcode/medium/q71.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-71">Q71</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-73"
+                                                   onclick="show('theory/leetcode/medium/q73.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-73">Q73</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-74"
+                                                   onclick="show('theory/leetcode/medium/q74.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-74">Q74</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-75"
+                                                   onclick="show('theory/leetcode/medium/q75.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-75">Q75</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-77"
+                                                   onclick="show('theory/leetcode/medium/q77.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-77">Q77</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-78"
+                                                   onclick="show('theory/leetcode/medium/q78.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-78">Q78</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-79"
+                                                   onclick="show('theory/leetcode/medium/q79.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-79">Q79</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-80"
+                                                   onclick="show('theory/leetcode/medium/q80.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-80">Q80</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-81"
+                                                   onclick="show('theory/leetcode/medium/q81.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-81">Q81</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-82"
+                                                   onclick="show('theory/leetcode/medium/q82.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-82">Q82</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-86"
+                                                   onclick="show('theory/leetcode/medium/q86.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-86">Q86</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-89"
+                                                   onclick="show('theory/leetcode/medium/q89.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-89">Q89</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-90"
+                                                   onclick="show('theory/leetcode/medium/q90.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-90">Q90</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-91"
+                                                   onclick="show('theory/leetcode/medium/q91.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-91">Q91</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-92"
+                                                   onclick="show('theory/leetcode/medium/q92.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-92">Q92</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-93"
+                                                   onclick="show('theory/leetcode/medium/q93.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-93">Q93</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-95"
+                                                   onclick="show('theory/leetcode/medium/q95.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-95">Q95</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-96"
+                                                   onclick="show('theory/leetcode/medium/q96.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-96">Q96</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-97"
+                                                   onclick="show('theory/leetcode/medium/q97.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-97">Q97</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-98"
+                                                   onclick="show('theory/leetcode/medium/q98.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-98">Q98</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-99"
+                                                   onclick="show('theory/leetcode/medium/q99.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-99">Q99</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-102"
+                                                   onclick="show('theory/leetcode/medium/q102.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-102">Q102</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-103"
+                                                   onclick="show('theory/leetcode/medium/q103.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-103">Q103</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-105"
+                                                   onclick="show('theory/leetcode/medium/q105.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-105">Q105</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-106"
+                                                   onclick="show('theory/leetcode/medium/q106.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-106">Q106</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-107"
+                                                   onclick="show('theory/leetcode/medium/q107.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-107">Q107</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-109"
+                                                   onclick="show('theory/leetcode/medium/q109.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-109">Q109</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-113"
+                                                   onclick="show('theory/leetcode/medium/q113.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-113">Q113</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-114"
+                                                   onclick="show('theory/leetcode/medium/q114.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-114">Q114</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-116"
+                                                   onclick="show('theory/leetcode/medium/q116.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-116">Q116</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-117"
+                                                   onclick="show('theory/leetcode/medium/q117.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-117">Q117</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-120"
+                                                   onclick="show('theory/leetcode/medium/q120.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-120">Q120</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-122"
+                                                   onclick="show('theory/leetcode/medium/q122.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-122">Q122</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-128"
+                                                   onclick="show('theory/leetcode/medium/q128.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-128">Q128</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-129"
+                                                   onclick="show('theory/leetcode/medium/q129.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-129">Q129</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-130"
+                                                   onclick="show('theory/leetcode/medium/q130.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-130">Q130</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-131"
+                                                   onclick="show('theory/leetcode/medium/q131.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-131">Q131</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-133"
+                                                   onclick="show('theory/leetcode/medium/q133.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-133">Q133</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-134"
+                                                   onclick="show('theory/leetcode/medium/q134.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-134">Q134</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-137"
+                                                   onclick="show('theory/leetcode/medium/q137.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-137">Q137</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-138"
+                                                   onclick="show('theory/leetcode/medium/q138.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-138">Q138</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-139"
+                                                   onclick="show('theory/leetcode/medium/q139.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-139">Q139</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-143"
+                                                   onclick="show('theory/leetcode/medium/q143.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-143">Q143</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-146"
+                                                   onclick="show('theory/leetcode/medium/q146.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-146">Q146</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-150"
+                                                   onclick="show('theory/leetcode/medium/q150.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-150">Q150</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-151"
+                                                   onclick="show('theory/leetcode/medium/q151.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-151">Q151</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-152"
+                                                   onclick="show('theory/leetcode/medium/q152.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-152">Q152</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-155"
+                                                   onclick="show('theory/leetcode/medium/q155.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-155">Q155</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-156"
+                                                   onclick="show('theory/leetcode/medium/q156.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-156">Q156</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-159"
+                                                   onclick="show('theory/leetcode/medium/q159.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-159">Q159</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-161"
+                                                   onclick="show('theory/leetcode/medium/q161.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-161">Q161</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-162"
+                                                   onclick="show('theory/leetcode/medium/q162.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-162">Q162</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-165"
+                                                   onclick="show('theory/leetcode/medium/q165.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-165">Q165</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-166"
+                                                   onclick="show('theory/leetcode/medium/q166.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-166">Q166</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-167"
+                                                   onclick="show('theory/leetcode/medium/q167.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-167">Q167</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-172"
+                                                   onclick="show('theory/leetcode/medium/q172.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-172">Q172</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-173"
+                                                   onclick="show('theory/leetcode/medium/q173.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-173">Q173</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-179"
+                                                   onclick="show('theory/leetcode/medium/q179.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-179">Q179</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-186"
+                                                   onclick="show('theory/leetcode/medium/q186.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-186">Q186</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-187"
+                                                   onclick="show('theory/leetcode/medium/q187.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-187">Q187</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-189"
+                                                   onclick="show('theory/leetcode/medium/q189.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-189">Q189</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-198"
+                                                   onclick="show('theory/leetcode/medium/q198.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-198">Q198</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-199"
+                                                   onclick="show('theory/leetcode/medium/q199.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-199">Q199</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-200"
+                                                   onclick="show('theory/leetcode/medium/q200.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-200">Q200</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-201"
+                                                   onclick="show('theory/leetcode/medium/q201.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-201">Q201</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-204"
+                                                   onclick="show('theory/leetcode/medium/q204.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-204">Q204</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-207"
+                                                   onclick="show('theory/leetcode/medium/q207.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-207">Q207</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-208"
+                                                   onclick="show('theory/leetcode/medium/q208.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-208">Q208</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-209"
+                                                   onclick="show('theory/leetcode/medium/q209.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-209">Q209</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-210"
+                                                   onclick="show('theory/leetcode/medium/q210.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-210">Q210</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-211"
+                                                   onclick="show('theory/leetcode/medium/q211.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-211">Q211</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-213"
+                                                   onclick="show('theory/leetcode/medium/q213.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-213">Q213</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-215"
+                                                   onclick="show('theory/leetcode/medium/q215.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-215">Q215</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-216"
+                                                   onclick="show('theory/leetcode/medium/q216.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-216">Q216</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-220"
+                                                   onclick="show('theory/leetcode/medium/q220.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-220">Q220</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-221"
+                                                   onclick="show('theory/leetcode/medium/q221.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-221">Q221</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-222"
+                                                   onclick="show('theory/leetcode/medium/q222.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-222">Q222</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-223"
+                                                   onclick="show('theory/leetcode/medium/q223.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-223">Q223</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-227"
+                                                   onclick="show('theory/leetcode/medium/q227.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-227">Q227</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-229"
+                                                   onclick="show('theory/leetcode/medium/q229.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-229">Q229</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-230"
+                                                   onclick="show('theory/leetcode/medium/q230.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-230">Q230</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-236"
+                                                   onclick="show('theory/leetcode/medium/q236.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-236">Q236</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-238"
+                                                   onclick="show('theory/leetcode/medium/q238.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-238">Q238</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-240"
+                                                   onclick="show('theory/leetcode/medium/q240.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-240">Q240</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-241"
+                                                   onclick="show('theory/leetcode/medium/q241.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-241">Q241</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-244"
+                                                   onclick="show('theory/leetcode/medium/q244.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-244">Q244</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-245"
+                                                   onclick="show('theory/leetcode/medium/q245.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-245">Q245</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-247"
+                                                   onclick="show('theory/leetcode/medium/q247.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-247">Q247</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-249"
+                                                   onclick="show('theory/leetcode/medium/q249.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-249">Q249</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-250"
+                                                   onclick="show('theory/leetcode/medium/q250.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-250">Q250</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-251"
+                                                   onclick="show('theory/leetcode/medium/q251.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-251">Q251</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-253"
+                                                   onclick="show('theory/leetcode/medium/q253.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-253">Q253</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-254"
+                                                   onclick="show('theory/leetcode/medium/q254.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-254">Q254</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-255"
+                                                   onclick="show('theory/leetcode/medium/q255.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-255">Q255</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-256"
+                                                   onclick="show('theory/leetcode/medium/q256.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-256">Q256</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-259"
+                                                   onclick="show('theory/leetcode/medium/q259.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-259">Q259</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-260"
+                                                   onclick="show('theory/leetcode/medium/q260.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-260">Q260</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-261"
+                                                   onclick="show('theory/leetcode/medium/q261.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-261">Q261</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-264"
+                                                   onclick="show('theory/leetcode/medium/q264.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-264">Q264</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-267"
+                                                   onclick="show('theory/leetcode/medium/q267.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-267">Q267</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-271"
+                                                   onclick="show('theory/leetcode/medium/q271.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-271">Q271</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-274"
+                                                   onclick="show('theory/leetcode/medium/q274.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-274">Q274</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-275"
+                                                   onclick="show('theory/leetcode/medium/q275.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-275">Q275</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-276"
+                                                   onclick="show('theory/leetcode/medium/q276.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-276">Q276</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-277"
+                                                   onclick="show('theory/leetcode/medium/q277.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-277">Q277</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-279"
+                                                   onclick="show('theory/leetcode/medium/q279.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-279">Q279</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-280"
+                                                   onclick="show('theory/leetcode/medium/q280.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-280">Q280</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-281"
+                                                   onclick="show('theory/leetcode/medium/q281.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-281">Q281</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-284"
+                                                   onclick="show('theory/leetcode/medium/q284.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-284">Q284</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-285"
+                                                   onclick="show('theory/leetcode/medium/q285.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-285">Q285</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-286"
+                                                   onclick="show('theory/leetcode/medium/q286.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-286">Q286</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-287"
+                                                   onclick="show('theory/leetcode/medium/q287.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-287">Q287</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-288"
+                                                   onclick="show('theory/leetcode/medium/q288.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-288">Q288</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-289"
+                                                   onclick="show('theory/leetcode/medium/q289.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-289">Q289</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-291"
+                                                   onclick="show('theory/leetcode/medium/q291.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-291">Q291</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-294"
+                                                   onclick="show('theory/leetcode/medium/q294.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-294">Q294</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-298"
+                                                   onclick="show('theory/leetcode/medium/q298.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-298">Q298</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-299"
+                                                   onclick="show('theory/leetcode/medium/q299.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-299">Q299</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-300"
+                                                   onclick="show('theory/leetcode/medium/q300.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-300">Q300</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-450"
+                                                   onclick="show('theory/leetcode/medium/q450.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-450">Q450</label>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-112"
-                                       onclick="show('theory/leetcode/q112.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-112">Q112</label>
+
+                            <li class="mb-1 indent">
+                                <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#series-collapse" aria-expanded="false">
+                                    Series
+                                </button>
+                                <div class="collapse" id="series-collapse">
+                                    <ul class="list-unstyled fw-normal pb-1">
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-121-2-3"
+                                                   onclick="show('theory/leetcode/series/q121-2-3.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-121-2-3">Q121-2-3</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-141-2"
+                                                   onclick="show('theory/leetcode/series/q141-2.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-141-2">Q141-2</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-144-5"
+                                                   onclick="show('theory/leetcode/series/q144-5.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-144-5">Q144-5</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-147-8"
+                                                   onclick="show('theory/leetcode/series/q147-8.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-147-8">Q147-8</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-153-4"
+                                                   onclick="show('theory/leetcode/series/q153-4.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-153-4">Q153-4</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="btn-check" name="sidebar" id="2-157-8"
+                                                   onclick="show('theory/leetcode/series/q157-8.md')">
+                                            <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-157-8">Q157-8</label>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-118"
-                                       onclick="show('theory/leetcode/q118.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-118">Q118</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-119"
-                                       onclick="show('theory/leetcode/q119.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-119">Q119</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-121-2-3"
-                                       onclick="show('theory/leetcode/q121-2-3.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-121-2-3">Q121-2-3</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-125"
-                                       onclick="show('theory/leetcode/q125.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-125">Q125</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-136"
-                                       onclick="show('theory/leetcode/q136.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-136">Q136</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-141-2"
-                                       onclick="show('theory/leetcode/q141-2.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-141-2">Q141-2</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-143"
-                                       onclick="show('theory/leetcode/q143.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-143">Q143</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-144-5"
-                                       onclick="show('theory/leetcode/q144-5.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-144-5">Q144-5</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-146"
-                                       onclick="show('theory/leetcode/q146.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-146">Q146</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-147-8"
-                                       onclick="show('theory/leetcode/q147-8.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-147-8">Q147-8</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-150"
-                                       onclick="show('theory/leetcode/q150.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-150">Q150</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-151"
-                                       onclick="show('theory/leetcode/q151.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-151">Q151</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-152"
-                                       onclick="show('theory/leetcode/q152.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-152">Q152</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-153-4"
-                                       onclick="show('theory/leetcode/q153-4.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-153-4">Q153-4</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-155"
-                                       onclick="show('theory/leetcode/q155.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-155">Q155</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-156"
-                                       onclick="show('theory/leetcode/q156.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-156">Q156</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-157-8"
-                                       onclick="show('theory/leetcode/q157-8.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-157-8">Q157-8</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-450"
-                                       onclick="show('theory/leetcode/q450.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-450">Q450</label>
-                            </li>
+
 
                         </ul>
                     </div>

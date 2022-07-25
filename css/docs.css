@@ -918,14 +918,13 @@
 .sidebar-branch {
     padding: .25rem .5rem;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(222, 218, 214, 0.7);
     background-color: transparent;
 }
 
 .sidebar-branch:hover, .sidebar-branch:focus {
-    color: rgba(255, 255, 255, 0.8);
-    /*background-color:rgba(255, 255, 255, 0.1);*/
-    border-color: rgba(255, 255, 255, 0.6);
+    color: rgba(222, 218, 214, 1);
+    border-color: rgba(222, 218, 214, 1);
 }
 
 .sidebar-branch:focus {
@@ -947,7 +946,7 @@
 }
 
 .sidebar-branch[aria-expanded="true"] {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(222, 218, 214, 1);
     /*background-color:rgba(255, 255, 255, 0.2);*/
 }
 
@@ -981,6 +980,10 @@
 
 .bd-main {
     grid-area:main
+}
+
+.indent {
+    padding-left: 1.25rem;
 }
 
 @media (min-width: 768px) {

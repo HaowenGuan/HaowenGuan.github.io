@@ -20,12 +20,11 @@
 
 .invert{
     filter: invert(100%);
-    background-image: url('../image/stars-s-w.jpeg');
 }
 
-.not-invert{
-    filter: invert(100%);
-}
+/*.not-invert{*/
+/*    filter: invert(100%);*/
+/*}*/
 
 .pl-c /* comment, punctuation.definition.comment, string.comment */ {
     color: #6a737d;

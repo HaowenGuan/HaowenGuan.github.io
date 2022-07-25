@@ -1,4 +1,4 @@
-# Python Notes
+# Python Note
 
 ## Bit Manipulation
 1. `^`: Bitwise XOR. (logically same as `!=`)

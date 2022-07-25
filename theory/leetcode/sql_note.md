@@ -13,10 +13,10 @@ Right rows always preserved.
 #### INNER JOIN
 Only paired rows preserved.
 #### ON
-Comparison operators are: `=, <, >, <=, >=, and != or <>`.
+Comparison operators are: `=, <, >, <=, >=,` and `!=` or `<>`.
 ## WHERE
 ## GROUP BY
-## ORDER BY ___ (ASC / DESC)
+## ORDER BY ___ (`ASC` / `DESC`)
 Default is `ASC`.
 ## LIMIT
 ### OFFSET

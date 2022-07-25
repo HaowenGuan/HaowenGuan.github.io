@@ -45,7 +45,7 @@
 
         <div class="collapse navbar-collapse fw-thick" id="navbarNav">
             <div class="d-flex flex-fill justify-content-center">
-                <ul class="navbar-nav pt-2 py-md-0">
+                <ul class="navbar-nav pt-2 py-md-0 nv-shadow px-1">
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2" href="document.html">Document</a>
                     </li>
@@ -187,16 +187,20 @@
                                 <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-r">Introduction</label>
                             </li>
                             <li>
-                                <input type="radio" class="btn-check" name="sidebar" id="2-l"
-                                       onclick="show('theory/leetcode/leetcode_note.md')">
-                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-l">Leetcode Note</label>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-py"
+                                       onclick="show('theory/leetcode/python_note.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-py">Python Note</label>
                             </li>
                             <li>
                                 <input type="radio" class="btn-check" name="sidebar" id="2-sql"
                                        onclick="show('theory/leetcode/sql_note.md')">
                                 <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-sql">SQL Note</label>
                             </li>
-
+                            <li>
+                                <input type="radio" class="btn-check" name="sidebar" id="2-l"
+                                       onclick="show('theory/leetcode/leetcode_note.md')">
+                                <label class="btn btn-radio-HG d-inline-flex align-items-center" for="2-l">Leetcode Note</label>
+                            </li>
                             <li class="mb-1 indent">
                                 <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#easy-collapse" aria-expanded="false">
                                     Easy
@@ -626,7 +630,6 @@
                                     </ul>
                                 </div>
                             </li>
-
                             <li class="mb-1 indent">
                                 <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#medium-collapse" aria-expanded="false">
                                     Medium
@@ -1436,7 +1439,6 @@
                                     </ul>
                                 </div>
                             </li>
-
                             <li class="mb-1 indent">
                                 <button class="btn sidebar-branch d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#series-collapse" aria-expanded="false">
                                     Series
@@ -1476,8 +1478,6 @@
                                     </ul>
                                 </div>
                             </li>
-
-
                         </ul>
                     </div>
                 </li>
